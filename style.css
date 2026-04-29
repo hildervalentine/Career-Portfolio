@@ -683,6 +683,55 @@ h1 span.text-\[\#14f2d7\] {
 }
 
 /* ============================================================
+   CERTIFICATE SCROLLING STRIP
+   ============================================================ */
+@keyframes scrollCerts {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+.cert-strip {
+  display: flex;
+  gap: 1rem;
+  width: max-content;
+  animation: scrollCerts 30s linear infinite;
+}
+.cert-strip:hover { animation-play-state: paused; }
+
+.cert-item {
+  flex: 0 0 auto;
+  width: 280px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 0;
+  border: 1px solid var(--border-em);
+  position: relative;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+.cert-item:hover {
+  width: 420px;
+  height: 300px;
+  z-index: 50;
+  border-color: var(--amber);
+  box-shadow: 0 0 30px rgba(26,122,74,0.25);
+}
+.cert-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  transition: all 0.5s ease;
+  filter: brightness(0.92);
+}
+.cert-item:hover img { filter: brightness(1); }
+
+@media (max-width: 640px) {
+  .cert-strip { animation-duration: 40s; }
+  .cert-item { width: 220px; height: 160px; }
+  .cert-item:hover { width: 220px; height: 160px; }
+}
+
+/* ============================================================
    SCROLLBAR
    ============================================================ */
 ::-webkit-scrollbar { width: 4px; }
