@@ -4,18 +4,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <title>My Portfolio</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body class="relative text-white min-h-screen flex flex-col items-center"
   style="background: linear-gradient(135deg, #012002 0%, #000f04 40%, #022b16 100%);">
 
   <div class="container">
+
     <!-- INTRO -->
     <section
       class="section-container w-full md:max-w-4xl md:mx-auto flex flex-col md:flex-row gap-2 rounded-xl overflow-hidden relative z-10 mb-5"
@@ -29,20 +27,20 @@
       </div>
 
       <div class="flex-1 p-1">
-        <h1 class="text-5xl font-extrabold mb-2" data-en="Hi, I'm Emmanuel the Mechatronics Engineer"
-          data-de="Hallo, ich bin Hilder Valentine, Mechatronikingenieur">
+        <h1 class="text-5xl font-extrabold mb-2"
+          data-en="Hi, I'm Hilder Valentine the Urban Planner"
+          data-de="Hallo, ich bin Hilder Valentine, Stadtplanerin">
           Hi, I'm <span class="text-[#14f2d7]">Hilder Valentine</span>
-          the <span class="text-[#14f2d7]"> Urban Planner</span>
+          the <span class="text-[#14f2d7]">Urban Planner</span>
         </h1>
-
         <p class="text-gray-300 max-w-none md:max-w-xl"
-          data-en="Professionl in urban planning, environmental assessment, GIS Analysis, Reasearch and data collection."
+          data-en="Urban and Regional Planner, environmentalist, spatial planning professional, climate activist and sustainability enthusiast."
           data-de="To be done.">
-          Hilder Valentine the Urban and Regional Planner, environmentalist, spatial planning professional, climate activist and sustainability enthusiasist.
+          Urban and Regional Planner, environmentalist, spatial planning professional, climate activist and sustainability enthusiast.
         </p>
         <p class="text-gray-300 max-w-none md:max-w-xl mt-2"
           data-en="Currently studying Masters in Sustainable Urban Development - Technische Universität Darmstadt, Germany."
-          data-de="Derzeit Masterstudium in TBD - Technische Universität Darmstadt, Deutschland.">
+          data-de="Derzeit Masterstudium in Nachhaltiger Stadtentwicklung - Technische Universität Darmstadt, Deutschland.">
           Currently studying Masters in Sustainable Urban Development - Technische Universität Darmstadt, Germany.
         </p>
       </div>
@@ -50,611 +48,552 @@
       <div class="flex-1 relative p-2 flex justify-center">
         <div class="intro-glow"></div>
         <div class="w-60 h-80 overflow-hidden rounded-xl relative shadow-lg">
-          <img src="/photos/PHOTO HVGN.JPG" class="w-full h-full object-cover rounded-xl shadow-xl relative">
+          <img src="/photos/PHOTO HVGN.JPG" class="w-full h-full object-cover object-top rounded-xl shadow-xl relative">
         </div>
-        <div class="absolute top-0 right-0 w-24 h-48 bg-[#14f2d7] opacity-40 clip-path-triangle">
-        </div>
+        <div class="absolute top-0 right-0 w-24 h-48 bg-[#14f2d7] opacity-40 clip-path-triangle"></div>
       </div>
-    </section>   
+    </section>
 
     <!-- STATS BAR -->
     <section class="section-container max-w-8xl w-full mb-10 relative z-10">
       <div class="grid grid-cols-3 gap-px rounded-xl overflow-hidden bg-[#14f2d7]/20">
+
         <div class="stat-card bg-[#1b1b1b] p-6 md:p-8 text-center rounded-lg">
-          <div class="stat-number text-4xl font-extrabold text-[#14f2d7]" data-target="8">&lt; 6</div>
+          <div class="stat-number text-4xl font-extrabold text-[#14f2d7]">&lt; 6</div>
           <p class="text-sm text-gray-400 tracking-wide mt-1" data-en="Years Experience" data-de="Jahre Erfahrung">
             Years Experience
           </p>
         </div>
+
         <div class="stat-card bg-[#1b1b1b] p-6 md:p-8 text-center rounded-lg">
-          <div class="stat-number text-4xl font-extrabold text-[#14f2d7]" data-target="23"> 10+</div>
+          <div class="stat-number text-4xl font-extrabold text-[#14f2d7]">Growing</div>
           <p class="text-sm text-gray-400 tracking-wide mt-1" data-en="Projects Delivered" data-de="Projekte geliefert">
             Projects Delivered
           </p>
         </div>
-        
+
+        <div class="stat-card bg-[#1b1b1b] p-6 md:p-8 text-center rounded-lg">
+          <div class="stat-number text-4xl font-extrabold text-[#14f2d7]">2</div>
+          <p class="text-sm text-gray-400 tracking-wide mt-1" data-en="Countries Worked In" data-de="Länder">
+            Countries Worked In
           </p>
         </div>
+
       </div>
     </section>
 
-    <!-- EXPERTISE STRIP -->
+    <!-- EXPERTISE STRIP DIVIDER -->
     <div class="relative z-10 mb-10">
       <div class="absolute left-1/2 -translate-x-1/2 w-[700px] h-[2px]
-              bg-gradient-to-r from-transparent via-[#14f2d7] to-transparent
-              opacity-50"></div>
+              bg-gradient-to-r from-transparent via-[#14f2d7] to-transparent opacity-50"></div>
     </div>
 
+    <!-- EXPERTISE CARDS — 2x2 grid -->
     <section class="section-container max-w-8xl w-full mb-10 relative z-10">
-      <div class="grid md:grid-cols-3 gap-8">
-        <div
-          class="reveal expertise-card bg-[#1d1d1d] p-4 rounded-xl border border-[#14f2d7]/20 hover:border-[#14f2d7]/60 transition">
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+
+        <div class="reveal expertise-card bg-[#1d1d1d] p-4 rounded-xl border border-[#14f2d7]/20 hover:border-[#14f2d7]/60 transition">
           <div class="expertise-header">
             <div class="expertise-icon">⚙️</div>
-            <h3 class="expertise-title" data-en="Automation Systems" data-de="Automatisierungssysteme">
+            <h3 class="expertise-title" data-en="Urban Planning Specializations" data-de="Stadtplanung">
               Urban Planning Specializations
             </h3>
           </div>
-          <p class="expertise-desc"
-            data-en="Land Use Planning, GIS Analysis,  Environmental management, and Community-Oriented Planning."
-            data-de="TBD.">
+          <p class="expertise-desc" data-en="Land Use Planning, Environmental management, Urban Regeneration, and Community-Oriented Planning." data-de="TBD.">
             Land Use Planning, Environmental management, Urban Regeneration, and Community-Oriented Planning.
           </p>
         </div>
-        <div
-          class="reveal expertise-card bg-[#1d1d1d] p-4 rounded-xl border border-[#14f2d7]/20 hover:border-[#14f2d7]/60 transition">
+
+        <div class="reveal expertise-card bg-[#1d1d1d] p-4 rounded-xl border border-[#14f2d7]/20 hover:border-[#14f2d7]/60 transition">
           <div class="expertise-header">
-            <div class="expertise-icon">🤖</div>
+            <div class="expertise-icon">🗺️</div>
             <h3 class="expertise-title" data-en="Geographic Information Systems" data-de="TBD">
               Geographic Information Systems
             </h3>
           </div>
-          <p class="expertise-desc" data-en="Geospatial Data Analysis, Mapping & Visualization, Proximity & Accessibility Analysis, and Overlay & Buffer Analysis."
-            data-de="TBD.">
+          <p class="expertise-desc" data-en="Geospatial Data Analysis, Mapping & Visualization, Proximity & Accessibility Analysis, and Overlay & Buffer Analysis." data-de="TBD.">
             Geospatial Data Analysis, Mapping & Visualization, Proximity & Accessibility Analysis, and Overlay & Buffer Analysis.
           </p>
-</div>
-        <div
-          class="reveal expertise-card bg-[#1d1d1d] p-4 rounded-xl border border-[#14f2d7]/20 hover:border-[#14f2d7]/60 transition">
+        </div>
+
+        <div class="reveal expertise-card bg-[#1d1d1d] p-4 rounded-xl border border-[#14f2d7]/20 hover:border-[#14f2d7]/60 transition">
           <div class="expertise-header">
-            <div class="expertise-icon">🤖</div>
+            <div class="expertise-icon">🔬</div>
             <h3 class="expertise-title" data-en="Research and Data Collection" data-de="TBD">
               Research and Data Collection
             </h3>
           </div>
-          <p class="expertise-desc" data-en="Primary and secondary data collection, Field surveys and observational studies, Questionnaire design and administration, and Spatial and non-spatial data collection."
-            data-de="TBD.">
+          <p class="expertise-desc" data-en="Primary and secondary data collection, Field surveys and observational studies, Questionnaire design and administration, and Spatial and non-spatial data collection." data-de="TBD.">
             Primary and secondary data collection, Field surveys and observational studies, Questionnaire design and administration, and Spatial and non-spatial data collection.
           </p>
         </div>
-        <div
-          class="reveal expertise-card bg-[#1d1d1d] p-4 rounded-xl border border-[#14f2d7]/20 hover:border-[#14f2d7]/60 transition">
+
+        <div class="reveal expertise-card bg-[#1d1d1d] p-4 rounded-xl border border-[#14f2d7]/20 hover:border-[#14f2d7]/60 transition">
           <div class="expertise-header">
             <div class="expertise-icon">📊</div>
-            <h3 class="expertise-title" data-en="Environmental Management" data-de="TBD">
+            <h3 class="expertise-title" data-en="Environmental & Social Impact" data-de="TBD">
               Environmental & Social Impact
             </h3>
           </div>
-          <p class="expertise-desc" data-en="Social Sustainability, Environmental Assessment Public Interest Planning, Environmental Justice, and  Green Infrastructure."
-            data-de="TBD.">
-            Social Sustainability, Environmental Assessment Public Interest Planning, Environmental Justice, and  Green Infrastructure.
+          <p class="expertise-desc" data-en="Social Sustainability, Environmental Assessment, Public Interest Planning, Environmental Justice, and Green Infrastructure." data-de="TBD.">
+            Social Sustainability, Environmental Assessment, Public Interest Planning, Environmental Justice, and Green Infrastructure.
           </p>
         </div>
+
       </div>
     </section>
 
     <!-- TECH STACK STRIP -->
     <section class="max-w-6xl w-full mb-10 relative z-10 overflow-hidden">
       <div class="flex gap-16 items-center animate-tech-scroll text-gray-400 text-sm tracking-wide">
-        <span class="flex items-center gap-2">⚡ ArcGis</span>
-        <span class="flex items-center gap-2">🤖 GPS & Field Data Collection</span>
-        <span class="flex items-center gap-2">🧠 Environmental Sustainability</span>
+        <span class="flex items-center gap-2">⚡ ArcGIS</span>
+        <span class="flex items-center gap-2">🗺️ GPS & Field Data Collection</span>
+        <span class="flex items-center gap-2">🌿 Environmental Sustainability</span>
         <span class="flex items-center gap-2">📊 Land Use & Infrastructure Mapping</span>
         <span class="flex items-center gap-2">🔧 MS Office</span>
-        <span class="flex items-center gap-2">🛡 Technical Reporting </span>
-        <span class="flex items-center gap-2">💼 MS Office</span>
-        <span class="flex items-center gap-2">💻 Socio-economic surveys</span>
-
-        <!-- duplicate for seamless loop -->
-        <span class="flex items-center gap-2">⚡ ArcGis</span>
-        <span class="flex items-center gap-2">🤖 GPS & Field Data Collection</span>
-        <span class="flex items-center gap-2">🧠 Environmental Sustainability</span>
+        <span class="flex items-center gap-2">📝 Technical Reporting</span>
+        <span class="flex items-center gap-2">💻 Socio-economic Surveys</span>
+        <span class="flex items-center gap-2">🏙️ QGIS</span>
+        <span class="flex items-center gap-2">⚡ ArcGIS</span>
+        <span class="flex items-center gap-2">🗺️ GPS & Field Data Collection</span>
+        <span class="flex items-center gap-2">🌿 Environmental Sustainability</span>
         <span class="flex items-center gap-2">📊 Land Use & Infrastructure Mapping</span>
         <span class="flex items-center gap-2">🔧 MS Office</span>
-        <span class="flex items-center gap-2">🛡 Technical Reporting </span>
-        <span class="flex items-center gap-2">💼 MS Office</span>
-        <span class="flex items-center gap-2">💻 Socio-economic surveys</span>
+        <span class="flex items-center gap-2">📝 Technical Reporting</span>
+        <span class="flex items-center gap-2">💻 Socio-economic Surveys</span>
+        <span class="flex items-center gap-2">🏙️ QGIS</span>
       </div>
     </section>
 
     <!-- PROJECTS -->
     <section class="w-full flex flex-col gap-10 relative z-10">
 
-      <!-- Expo -->
+      <!-- BREAKTHROUGH HEADING -->
       <section class="max-w-4xl w-full relative z-10">
-        <h2 class="text-3xl font-bold text-center md:text-left" data-en="🏆 Breakthrough Project"
-          data-de="🏆 Durchbruchprojekt">
+        <h2 class="text-3xl font-bold text-center md:text-left"
+          data-en="🏆 Breakthrough Project" data-de="🏆 Durchbruchprojekt">
           <span class="text-[#14f2d7]"><b>🏆 Breakthrough</b></span> Project
         </h2>
-
-
-        <!-- Glow divider -->
-        <div class="mt-2 h-[2px] w-32 bg-gradient-to-r from-[#14f2d7] to-transparent"></div>
-      </section>
-<section class="project-tab reveal">
-      <div class="project flex flex-col md:flex-row gap-10 items-center">
-        <div class="project-collage">
-          <div class="project-image ratio-tall img expand">
-            <img src="/photos/Turkana river.jpeg">
-              </div>
-
-        <div class="card md:w-1/2 bg-[#222] p-6 rounded-xl">
-          <h3 class="text-[#14f2d7] text-xl font-bold mb-2">
-            Tenure Regularization :Turkana County, Kenya
-          </h3>
-          <p data-en="Marginalised communities are not passive recipients of development, nor problems to be solved, but essential contributors to our shared social and environmental fabric."
-            data-de="TBD.">
-
-            Some projects teach you skills. Others define your purpose. This project marked a defining moment in my journey as an urban planner. During my time working on data collection
-            for the implementation of a county development plan in Turkana County, I engaged with numerous project-affected persons. While each interaction deepened my understanding of 
-            development on the ground, one encounter fundamentally reshaped how I view my role in this profession.I met a woman who, despite having only one eye, was actively involved in 
-            sensitising her community about the tenure regularisation process. Her commitment was not symbolic but rather it was practical, informed, and deeply rooted in care for her people. 
-            She took the time to walk with me in the settlements and took me along the river, pointing out areas of silt accumulation and explaining how these changes were affecting livelihoods 
-            and land use. In that moment, she was not a “beneficiary” of development; she was a steward of knowledge, resilience, and place.This revealed to me thatvthe true purpose 
-            of planning goes beyond drawings, policies, and reports. It reminded me that marginalised communities are not passive recipients of development, nor problems to be solved, but essential 
-            contributors to our shared social and environmental fabric. This experience reaffirmed why I chose this career path: to plan with people, not for them, and to ensure that 
-            development is inclusive, dignified, and grounded in lived realities.
-
-            </div>
-        </div>
-      </section>
-
-      <!-- WORK EXPERIENCE HEADING -->
-      <section class="max-w-4xl w-full mb-10 relative z-10">
-        <h2 class="text-3xl font-bold text-center md:text-left" data-en="🛠️ Work Experience 🛠️"
-          data-de="🛠️ Berufserfahrung 🛠️">
-          <span class="text-[#14f2d7]"> 🛠️Work</span> Experience 🛠️
-        </h2>
-
-
-        <!-- Glow divider -->
         <div class="mt-2 h-[2px] w-32 bg-gradient-to-r from-[#14f2d7] to-transparent"></div>
       </section>
 
-      <!-- Project 2 (  Field data collection) -->
-       <section class="project-tab reveal">
-      <div class="section-container project flex flex-col md:flex-row-reverse gap-10 items-center">
-        <div class="project-collage">
-          <div class="project-image ratio-tall img expand">
-            <img src="/photos/Stakeholders.jpeg" alt="Urban Design">
-          </div>
-          <div class="project-image ratio-tall img expand">
-            <img src="/photos/Data collection.jpeg" alt="GIS Analysis">
-          </div>
-        </div>
+      <!-- BREAKTHROUGH PROJECT -->
+      <section class="project-tab reveal">
+        <div class="flex flex-col gap-6">
 
-        <div class="card md:w-1/2 bg-[#222] p-6 rounded-xl">
-          <h3 class="text-[#14f2d7] text-xl font-bold mb-2">
-         Urban and Regional Planning          </h3>
-          <p data-en="Demonstration of capabilities in <strong>Urban and regional planning,identification and analysis."
-            data-de="TBD">
-            I conducted primary data collection to support a tenure regularisation project involving physical planning, cadastral surveys, and detailed 
-            topographical surveys in 6 selected informal settlements in Turkana County (Lot VI). The project aimed to enhance tenure security by issuing lease certificates.
-            My role began with stakeholder and community engagement, including meetings with project-affected persons, local authorities, and relevant stakeholders to 
-            support participatory planning processes. I conducted primary data collection through socio-economic household surveys and supported field-based spatial 
-            data collection, including road and infrastructure mapping, as well as GPS data capture. The collected data were organised, georeferenced, and used to 
-            inform planning outputs, cadastral documentation, and the drafting of technical reports.
-
-      <glow divider -->
-        <div class="mt-2 h-[2px] w-32 bg-gradient-to-r from-[#14f2d7] to-transparent"></div>
-      </section>
-
-      <!-- Project 2 (Land Use Development) -->
-    <section class="project-tab reveal">
-      <div class="section-container project flex flex-col md:flex-row-reverse gap-1 items-center">
-        <div class="project-collage">
-          <div class="project-image ratio-tall img expand">
-            <img src="/photos/Policy review.png" alt=" Sustainability">
+          <!-- Full photo visible -->
+          <div class="w-full overflow-hidden rounded-xl border border-[#14f2d7]/20" style="max-height:500px;">
+            <img src="/photos/Turkana river.jpeg" class="w-full h-full object-cover object-center" style="max-height:500px;">
           </div>
-          <div class="project-image ratio-tall img expand">
-            <img src="/photos/img26.jpg" alt="GIS Analysis">
-          </div>
-          <div>
+
+          <div class="bg-[#222] p-6 rounded-xl">
+            <h3 class="text-[#14f2d7] text-xl font-bold mb-4">
+              Tenure Regularization: Turkana County, Kenya
+            </h3>
+            <p class="mb-4" data-en="Some projects teach you skills. Others define your purpose." data-de="TBD.">
+              Some projects teach you skills. Others define your purpose. This project marked a defining moment in my journey as an urban planner.
+            </p>
+            <p class="mb-4">
+              During my time working on data collection for the implementation of a county development plan in Turkana County, I engaged with numerous project-affected persons. While each interaction deepened my understanding of development on the ground, one encounter fundamentally reshaped how I view my role in this profession.
+            </p>
+            <p class="mb-4">
+              I met a woman who, despite having only one eye, was actively involved in sensitising her community about the tenure regularisation process. Her commitment was not symbolic — it was practical, informed, and deeply rooted in care for her people. She took the time to walk with me in the settlements and took me along the river, pointing out areas of silt accumulation and explaining how these changes were affecting livelihoods and land use.
+            </p>
+            <p class="mb-4">
+              In that moment, she was not a "beneficiary" of development; she was a steward of knowledge, resilience, and place. This revealed to me that the true purpose of planning goes beyond drawings, policies, and reports.
+            </p>
             <p>
-              Panel Member: Review of National Planning Legislation
-            My most significant professional accomplishment was participating in a high-level policy review panel alongside the Director of Physical Planning during the revision of the 
-            Physical Planners Registration Act and the Physical Planning Handbook. This engagement provided me with a strong foundation in policy review processes, planning legislation, 
-            professional regulatory standards, and governance frameworks that guide policy-aligned urban development. Contributing to this review process strengthened my understanding of 
-            how statutory planning instruments shape professional practice and support accountable, sustainable spatial development.
-
-            The outcome of this process informed the revised regulatory framework reflected in the Physical and Land Use Planning Act 2022. The updated legislation can be accessed : 
-            <a href="https://new.kenyalaw.org/akn/ke/act/1996/3/eng@2022-12-31" >Physical Planners Registration Act</a>
+              Marginalised communities are not passive recipients of development, nor problems to be solved, but essential contributors to our shared social and environmental fabric. This experience reaffirmed why I chose this career path: to plan <em>with</em> people, not <em>for</em> them, and to ensure that development is inclusive, dignified, and grounded in lived realities.
             </p>
           </div>
+
         </div>
-           I applied Geographic Information Systems (GIS) to support spatial analysis and evidence-based planning. Using ArcGIS Pro, I conducted spatial data processing, mapping, and analysis to
-           visualize planning information, assess spatial patterns, and support informed decision-making in urban and regional planning contexts. This work strengthened my ability to translate 
-           complex spatial datasets into clear maps and analytical outputs that support planning policy and development strategies.
-        <div class="card md:w-1/2 bg-[#222] p-6 rounded-xl">
-          <h3 class="text-[#14f2d7] text-xl font-bold mb-2">
-         Ministry of Lands, Public Works, Housing and Urban Development, Department of Urban Development, </h3>
-          <p data-en="Demonstration of capabilities in technical, analytical,  and regulatory planning skills"
-            data-de="TBD.">
-            I developed strong technical, analytical,  and regulatory planning skills through hands-on involvement in statutory and strategic planning processes. 
-            I conducted feasibility studies evaluating physical, social, economic, and environmental conditions to support informed land-use decision-making and contributed to the preparation, 
-            implementation, and review of Physical and Land Use Development Plans across national, regional, and urban scales, strengthening  my understanding of integrated spatial planning.
-            My role also involved processing and reviewing development applications, maintaining physical planning records, and assessing development plans for statutory compliance.
-            </p>
-
-           
-            <!-- Demonstration of capabilities in <strong>Urban and regional planning(identification and analysis),</strong> which include: preparation of Physical and Land Use Development Plans, 
-            reviewing of policy, legal and regulatory frameworks relevant to the projects, stakeholders mapping and  engagement, topographical mapping and preparation of digital base maps, 
-            preparation of environmental status maps, preparation of the environmental and social screening reports, primary field data collection,preparation of the socio-economic survey findings report, 
-             mapping of structures, preparation of identification cards for beneficiaries. -->
-          </p>
-      </div>
-    </section>
-
-      <!--ACCREDITATIONS HEADING -->
-      <section class="max-w-4xl w-full mb-10 relative z-10">
-        <h2 class="text-3xl font-bold text-center md:text-left" data-en="🛠️ Work Experience 🛠️"
-          data-de="🛠️ Berufserfahrung 🛠️">
-          <span class="text-[#14f2d7]"> 🛠️ACCREDITATIONS</span>🛠️
-        </h2>
-
-        <!-- Glow divider -->
-        <div class="mt-2 h-[2px] w-32 bg-gradient-to-r from-[#14f2d7] to-transparent"></div>
       </section>
-      <img src="/photos/HarvardX.jpg" class="w-full h-full object-cover rounded-xl shadow-xl relative">
-      </section>
-      <img src="/photos/UBC.jpg" class="w-full h-full object-cover">
-      <img src="/photos/GIS Foundations.jpg" class="w-full h-full object-cover rounded-xl shadow-xl relative">
-      <img src="/photos/DelftXWageningen.jpg" class="w-full h-full object-cover rounded-xl shadow-xl relative">
 
       <!-- WORK EXPERIENCE HEADING -->
-      <section class="max-w-4xl w-full mb-10 relative z-10">
-        <h2 class="text-3xl font-bold text-center md:text-left" data-en="🛠️ Work Experience 🛠️"
-          data-de="🛠️ Berufserfahrung 🛠️">
-          <span class="text-[#14f2d7]"> 🛠️Work</span> Experience 🛠️
+      <section class="max-w-4xl w-full mb-4 relative z-10">
+        <h2 class="text-3xl font-bold text-center md:text-left"
+          data-en="🛠️ Work Experience" data-de="🛠️ Berufserfahrung">
+          <span class="text-[#14f2d7]">🛠️ Work</span> Experience
         </h2>
-
-        <!-- Glow divider -->
         <div class="mt-2 h-[2px] w-32 bg-gradient-to-r from-[#14f2d7] to-transparent"></div>
       </section>
 
-      <!-- Project 2 (  Field data collection) -->
-       <section class="project-tab reveal">
-             <div class="card md:w-1/2 bg-[#222] p-6 rounded-xl">
-          <h3 class="text-[#14f2d7] text-xl font-bold mb-2">
-         Urban and Regional Planning          </h3>
-          <p data-en="Demonstration of versatile digital skill set grounded in both formal training and practical application"
-            data-de="tbd">
-          I bring a strong and versatile digital skill set grounded in both formal training and practical application. I completed a comprehensive Microsoft Office certification at
-          Institute of Advanced Technology (IAT), where I developed advanced proficiency in Word, Excel, PowerPoint, and data-driven reporting for professional and academic use. 
-          I am experienced in working with SAP systems for structured data handling and process-oriented workflows, and I have strong GIS capabilities using ArcGIS and ArcMap (Esri)
-          as well as QGIS for spatial analysis, mapping, and urban planning applications. In addition, I work with Python for basic data analysis and automation, and Power BI (Microsoft) 
-          for data visualization and dashboard creation, enabling me to translate complex datasets into clear, actionable insights. Together, these tools allow me to work efficiently 
-          across data management, spatial analysis, and evidence-based decision-making in planning and sustainability-focused projects.
- </p>
-        </div>
-      </div>
-    </section>
-      <!-- PROFILE SEGMENT -->
+      <!-- WORK EXP 1 — Renaissance Planning -->
+      <section class="project-tab reveal">
+        <h3 class="text-[#14f2d7] text-xl font-bold mb-4">Urban and Regional Planning — Renaissance Planning Limited</h3>
 
-      <section
-        class="section-container fun-fact fun-fact-tab glow-mobile reveal  w-full md:max-w-4xl md:mx-auto bg-[#1b1b1b] rounded-xl p-2 mb-5 relative z-10 flex flex-col md:flex-row gap-6 items-center shadow-lg">
+        <!-- Photos first -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+          <div class="project-image ratio-tall img expand">
+            <img src="/photos/Stakeholders.jpeg" alt="Stakeholder Engagement">
+          </div>
+          <div class="project-image ratio-tall img expand">
+            <img src="/photos/Data collection.jpeg" alt="Data Collection">
+          </div>
+        </div>
+
+        <!-- Explanation below -->
+        <div class="bg-[#222] p-6 rounded-xl">
+          <p class="mb-4">
+            I conducted primary data collection to support a tenure regularisation project involving physical planning, cadastral surveys, and detailed topographical surveys in 6 selected informal settlements in Turkana County (Lot VI). The project aimed to enhance tenure security by issuing lease certificates.
+          </p>
+          <p class="mb-4">
+            My role began with stakeholder and community engagement, including meetings with project-affected persons, local authorities, and relevant stakeholders to support participatory planning processes.
+          </p>
+          <p>
+            I conducted primary data collection through socio-economic household surveys and supported field-based spatial data collection, including road and infrastructure mapping, as well as GPS data capture. The collected data were organised, georeferenced, and used to inform planning outputs, cadastral documentation, and the drafting of technical reports.
+          </p>
+        </div>
+      </section>
+
+      <!-- WORK EXP 2 — Ministry of Lands -->
+      <section class="project-tab reveal">
+
+        <!-- Title first -->
+        <h3 class="text-[#14f2d7] text-xl font-bold mb-6">
+          Ministry of Lands, Public Works, Housing and Urban Development — Department of Urban Development
+        </h3>
+
+        <!-- Policy review photo + text LEFT, GIS photo + text RIGHT -->
+        <div class="flex flex-col md:flex-row gap-6 mb-6">
+
+          <!-- Left: policy review photo then panel member text -->
+          <div class="md:w-1/2 flex flex-col gap-4">
+            <div class="project-image expand" style="height:280px;">
+              <img src="/photos/Policy review.png" alt="Policy Review Panel">
+            </div>
+            <div class="bg-[#222] p-4 rounded-xl">
+              <h4 class="text-[#14f2d7] font-bold mb-2">Panel Member: Review of National Planning Legislation</h4>
+              <p class="mb-3">
+                My most significant professional accomplishment was participating in a high-level policy review panel alongside the Director of Physical Planning during the revision of the Physical Planners Registration Act and the Physical Planning Handbook.
+              </p>
+              <p class="mb-3">
+                This engagement provided me with a strong foundation in policy review processes, planning legislation, professional regulatory standards, and governance frameworks that guide policy-aligned urban development.
+              </p>
+              <p>
+                The outcome informed the revised regulatory framework reflected in the Physical and Land Use Planning Act 2022.
+                <a href="https://new.kenyalaw.org/akn/ke/act/1996/3/eng@2022-12-31" target="_blank">Physical Planners Registration Act →</a>
+              </p>
+            </div>
+          </div>
+
+          <!-- Right: GIS photo then GIS explanation -->
+          <div class="md:w-1/2 flex flex-col gap-4">
+            <div class="project-image expand" style="height:280px;">
+              <img src="/photos/img26.jpg" alt="GIS Analysis">
+            </div>
+            <div class="bg-[#222] p-4 rounded-xl">
+              <h4 class="text-[#14f2d7] font-bold mb-2">GIS & Spatial Analysis</h4>
+              <p>
+                I applied Geographic Information Systems (GIS) to support spatial analysis and evidence-based planning. Using ArcGIS Pro, I conducted spatial data processing, mapping, and analysis to visualise planning information, assess spatial patterns, and support informed decision-making in urban and regional planning contexts. This work strengthened my ability to translate complex spatial datasets into clear maps and analytical outputs that support planning policy and development strategies.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Full-width explanation below both columns -->
+        <div class="bg-[#222] p-6 rounded-xl">
+          <p class="mb-4">
+            I developed strong technical, analytical, and regulatory planning skills through hands-on involvement in statutory and strategic planning processes.
+          </p>
+          <p class="mb-4">
+            I conducted feasibility studies evaluating physical, social, economic, and environmental conditions to support informed land-use decision-making, and contributed to the preparation, implementation, and review of Physical and Land Use Development Plans across national, regional, and urban scales.
+          </p>
+          <p>
+            My role also involved processing and reviewing development applications, maintaining physical planning records, and assessing development plans for statutory compliance.
+          </p>
+        </div>
+
+      </section>
+
+      <!-- ACCREDITATIONS HEADING -->
+      <section class="max-w-4xl w-full mb-4 relative z-10">
+        <h2 class="text-3xl font-bold text-center md:text-left"
+          data-en="🎓 Accreditations" data-de="🎓 Akkreditierungen">
+          <span class="text-[#14f2d7]">🎓 Accreditations</span>
+        </h2>
+        <div class="mt-2 h-[2px] w-32 bg-gradient-to-r from-[#14f2d7] to-transparent"></div>
+      </section>
+
+      <!-- CERTIFICATES GRID -->
+      <section class="project-tab reveal">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <img src="/photos/HarvardX.jpg" class="w-full rounded-xl shadow-xl border border-[#14f2d7]/20">
+          <img src="/photos/UBC.jpg" class="w-full rounded-xl shadow-xl border border-[#14f2d7]/20">
+          <img src="/photos/GIS Foundations.jpg" class="w-full rounded-xl shadow-xl border border-[#14f2d7]/20">
+          <img src="/photos/DelftXWageningen.jpg" class="w-full rounded-xl shadow-xl border border-[#14f2d7]/20">
+        </div>
+      </section>
+
+      <!-- DIGITAL SKILLS HEADING -->
+      <section class="max-w-4xl w-full mb-4 relative z-10">
+        <h2 class="text-3xl font-bold text-center md:text-left">
+          <span class="text-[#14f2d7]">💻 Digital Skills</span>
+        </h2>
+        <div class="mt-2 h-[2px] w-32 bg-gradient-to-r from-[#14f2d7] to-transparent"></div>
+      </section>
+
+      <section class="project-tab reveal">
+        <div class="bg-[#222] p-6 rounded-xl">
+          <h3 class="text-[#14f2d7] text-xl font-bold mb-4">Tools & Technologies</h3>
+          <p class="mb-4">
+            I bring a strong and versatile digital skill set grounded in both formal training and practical application. I completed a comprehensive Microsoft Office certification at the Institute of Advanced Technology (IAT), developing advanced proficiency in Word, Excel, PowerPoint, and data-driven reporting.
+          </p>
+          <p class="mb-4">
+            I am experienced in working with SAP systems for structured data handling and process-oriented workflows, and have strong GIS capabilities using ArcGIS and ArcMap (Esri) as well as QGIS for spatial analysis, mapping, and urban planning applications.
+          </p>
+          <p>
+            In addition, I work with Python for basic data analysis and automation, and Power BI (Microsoft) for data visualisation and dashboard creation — enabling me to translate complex datasets into clear, actionable insights.
+          </p>
+        </div>
+      </section>
+
+      <!-- PROFILE SEGMENT -->
+      <section class="section-container fun-fact fun-fact-tab glow-mobile reveal w-full md:max-w-4xl md:mx-auto bg-[#1b1b1b] rounded-xl p-2 mb-5 relative z-10 flex flex-col md:flex-row gap-6 items-center shadow-lg">
         <div class="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden border-4 border-[#14f2d7] flex-shrink-0">
-          <img src="/photos/PHOTO HVGN.JPG" class="w-full h-full object-cover">
+          <img src="/photos/PHOTO HVGN.JPG" class="w-full h-full object-cover object-top">
         </div>
         <div class="flex-1 text-center md:text-left">
-          <section class="section-container profile-content  relative z-10 
-               max-w-4xl mx-auto bg-[#1b1b1b] rounded-xl p-2">
+          <section class="section-container profile-content relative z-10 max-w-4xl mx-auto bg-[#1b1b1b] rounded-xl p-2">
             <section class="profile-content">
               <h3 class="text-2xl font-bold text-[#14f2d7] mb-2">Hilder Valentine</h3>
-              <span class="absolute top-0 left-0 text-6xl md:text-8xl text-[#14f2d7] opacity-20 select-none">“</span>
-              <span
-                class="absolute bottom-0 right-0 text-6xl md:text-8xl text-[#14f2d7] opacity-20 select-none">”</span>
-              <p class="relative text-gray-300 text-sm md:text-base z-10"
-                data-en="Working at the intersection of urban planning, spatial data, and sustainability, motivated by concerns about environmental degradation, climate change, 
-                and the long-term livability of cities.I enjoy transforming complex spatial and socio-economic data into actionable planning insights through research,
-                GIS-based analysis, and digital tools. My approach centers on smart, sustainable urban planning that uses evidence, technology, and innovation to design 
-                resilient cities that can balance growth, environmental protection, and social equity. Through ongoing learning and field experience, I strive to deliver 
-                data-driven solutions that advance sustainable urban development."
-                data-de="TBD.">
-                Working at the intersection of urban planning, spatial data, and sustainability, motivated by concerns about environmental degradation, climate change, 
-                and the long-term livability of cities. I enjoy transforming complex spatial and socio-economic data into actionable planning insights through research,
-                GIS-based analysis, and digital tools. My approach centers on smart, sustainable urban planning that uses evidence, technology, and innovation to design 
-                resilient cities that can balance growth, environmental protection, and social equity. Through ongoing learning and field experience, I strive to deliver 
-                data-driven solutions that advance sustainable urban development.
+              <span class="absolute top-0 left-0 text-6xl md:text-8xl text-[#14f2d7] opacity-20 select-none">"</span>
+              <span class="absolute bottom-0 right-0 text-6xl md:text-8xl text-[#14f2d7] opacity-20 select-none">"</span>
+              <p class="relative text-gray-300 text-sm md:text-base z-10 mb-3"
+                data-en="Working at the intersection of urban planning, spatial data, and sustainability." data-de="TBD.">
+                Working at the intersection of urban planning, spatial data, and sustainability, motivated by concerns about environmental degradation, climate change, and the long-term livability of cities.
               </p>
-              <p class="fun-fact-text relative text-gray-300 text-sm md:text-base mt-4 z-10"
-                data-en="rban environments experience ongoing pressures from population growth, climate change, and systemic inefficiencies. My goal is to develop resilient, 
-                 environmentally sustainable, future-oriented smart cities."
-                data-de="TBD.">
-                 Urban environments experience ongoing pressures from population growth, climate change, and systemic inefficiencies. My goal is to develop resilient, 
-                 environmentally sustainable, future-oriented smart cities.
+              <p class="relative text-gray-300 text-sm md:text-base z-10 mb-3">
+                I enjoy transforming complex spatial and socio-economic data into actionable planning insights through research, GIS-based analysis, and digital tools. My approach centres on smart, sustainable urban planning that uses evidence, technology, and innovation to design resilient cities that balance growth, environmental protection, and social equity.
+              </p>
+              <p class="fun-fact-text relative text-gray-300 text-sm md:text-base z-10" data-de="TBD.">
+                Urban environments experience ongoing pressures from population growth, climate change, and systemic inefficiencies. My goal is to develop resilient, environmentally sustainable, future-oriented smart cities.
               </p>
             </section>
             <div class="mt-4 flex gap-2 flex-wrap justify-center md:justify-start text-sm text-gray-400">
-              <span class="flex items-center gap-1 bg-[#14f2d7]/10 px-3 py-1 rounded-full">⚡ ArcGis</span>
-              <span class="flex items-center gap-1 bg-[#14f2d7]/10 px-3 py-1 rounded-full">🤖 GPS & Field Data Collection</span>
-              <span class="flex items-center gap-1 bg-[#14f2d7]/10 px-3 py-1 rounded-full">🧠 Environmental Sustainability</span>
-              <span class="flex items-center gap-1 bg-[#14f2d7]/10 px-3 py-1 rounded-full">💻 Land Use & Infrastructure Mapping</span>
-              <span class="flex items-center gap-1 bg-[#14f2d7]/10 px-3 py-1 rounded-full">📊 Technical Reporting & MS Office</span>
-  
-              <span class="flex items-center gap-1 bg-[#14f2d7]/10 px-3 py-1 rounded-full">💼 MS Office</span>
-              <span class="flex items-center gap-1 bg-[#14f2d7]/10 px-3 py-1 rounded-full">🔧 </span>
-          </p>
+              <span class="flex items-center gap-1 bg-[#14f2d7]/10 px-3 py-1 rounded-full">⚡ ArcGIS</span>
+              <span class="flex items-center gap-1 bg-[#14f2d7]/10 px-3 py-1 rounded-full">🗺️ GPS & Field Data</span>
+              <span class="flex items-center gap-1 bg-[#14f2d7]/10 px-3 py-1 rounded-full">🌿 Environmental Sustainability</span>
+              <span class="flex items-center gap-1 bg-[#14f2d7]/10 px-3 py-1 rounded-full">💻 Land Use Mapping</span>
+              <span class="flex items-center gap-1 bg-[#14f2d7]/10 px-3 py-1 rounded-full">📊 Technical Reporting</span>
+            </div>
+          </section>
         </div>
-        <!-- Glow divider -->
         <div class="h-[2px] w-32 bg-gradient-to-r from-[#14f2d7] to-transparent"></div>
-      </div>
       </section>
 
-      <!-- Project 3 (Predictive Maintenance) -->
-<section class="project-tab reveal">
-      <div class="section-container project flex flex-col md:flex-row gap-10 items-center">
-        <div class="project-collage">
-          <div class="project-image ratio-tall img expand">
-            <img src="/photos/CIty.jpg" alt="urban design">
+      <!-- SUSTAINABLE DEVELOPMENT -->
+      <section class="project-tab reveal">
+        <div class="project flex flex-col md:flex-row gap-10 items-start">
+          <div class="project-collage md:w-1/2">
+            <div class="project-image ratio-tall img expand">
+              <img src="/photos/CIty.jpg" alt="City">
+            </div>
+            <div class="project-image ratio-tall img expand">
+              <img src="/photos/Comprehensive Urban  Planning.png" alt="Urban Planning">
+            </div>
           </div>
-          <div class="project-image ratio-tall img expand">
-            <img src="/photos/Comprehensive Urban  Planning.png" alt="GIS Analysis">
+          <div class="card md:w-1/2 bg-[#222] p-6 rounded-xl">
+            <h3 class="text-[#14f2d7] text-xl font-bold mb-3">Sustainable Development</h3>
+            <p class="mb-4" data-en="Imagine a world where communities are shaped by inclusivity, adaptability, and sustainability" data-de="TBD.">
+              Imagine a world where communities are shaped by inclusivity, adaptability, and sustainability — where people can live dignified lives regardless of age, income, or social class.
+            </p>
+            <p class="mb-4">
+              In this world, development is not measured by the height of skyscrapers rising beside informal settlements, but by how well cities function for everyone. Cities are designed to be walkable for children, accessible for the elderly, safe for women, and supportive of livelihoods for all.
+            </p>
+            <p>
+              Sustainable urban development must reduce inequality, promote social cohesion, and balance environmental, economic, and social needs. True sustainability is not just about green buildings or modern infrastructure — it is about creating urban systems that are resilient, just, and capable of supporting diverse communities both now and in the future.
+            </p>
           </div>
         </div>
-
-        <div class="card md:w-1/2 bg-[#222] p-6 rounded-xl">
-          <h3 class="text-[#14f2d7] text-xl font-bold mb-2">
-            Sustainabe Development
-          </h3>
-          <p data-en="Imagine a world where communities are shaped by inclusivity, adaptability, and sustainability"
-            data-de="TBD.">
-
-             Imagine a world where communities are shaped by inclusivity, adaptability, and sustainability. A world in which people can live dignified lives, 
-             regardless of age, income, or social class. In this world, development is not measured by the height of skyscrapers rising beside informal settlements, 
-             but by how well cities function for everyone. Cities are designed to be walkable for children, accessible for the elderly, safe for women, and supportive of livelihoods for all. 
-             Cities thrive when they are built around people rather than rigid, top-down visions of progress. Sustainable urban development must reduce inequality, promote social cohesion, and 
-             balance environmental, economic, and social needs. True sustainability, therefore, is not just about green buildings or modern infrastructure; it is about creating urban systems 
-             that are resilient, just, and capable of supporting diverse communities, both now and in the future.
-
-          </p>
-        </div>
-        <!-- Glow divider -->
-        <div class="h-[2px] w-32 bg-gradient-to-r from-[#14f2d7] to-transparent"></div>
-      </div>
+        <div class="h-[2px] w-32 bg-gradient-to-r from-[#14f2d7] to-transparent mt-6"></div>
       </section>
 
       <!-- FUN FACT TAB -->
-      <section class="section-container glow-mobile fun-fact fun-fact-tab reveal w-full md:max-w-4xl md:mx-auto bg-[#1b1b1b] rounded-xl p-1
-  mb-5 mt-5 relative z-10 flex flex-col md:flex-row gap-6 items-center shadow-lg">
-
-        <!-- Icon / Visual -->
-        <div class="w-20 h-20 md:w-40 md:h-40 rounded-full flex items-center justify-center
-              bg-[#14f2d7]/20 border-4 border-[#14f2d7] text-5xl flex-shrink-0">
+      <section class="section-container glow-mobile fun-fact fun-fact-tab reveal w-full md:max-w-4xl md:mx-auto bg-[#1b1b1b] rounded-xl p-1 mb-5 mt-5 relative z-10 flex flex-col md:flex-row gap-6 items-center shadow-lg">
+        <div class="w-20 h-20 md:w-40 md:h-40 rounded-full flex items-center justify-center bg-[#14f2d7]/20 border-4 border-[#14f2d7] text-5xl flex-shrink-0">
           💡
         </div>
-
-        <!-- Content -->
         <div class="flex-1 text-center md:text-left relative">
-
-          <section class="section-container fun-fact-tab-content relative z-10 
-        max-w-4xl mx-auto bg-[#1b1b1b] rounded-xl p-8">
-            <h3 class="text-2xl font-bold text-[#14f2d7] mb-6" data-en="Fun Facts – Do You Know?"
-              data-de="Fun Facts – Wusstest du schon?">
+          <section class="section-container fun-fact-tab-content relative z-10 max-w-4xl mx-auto bg-[#1b1b1b] rounded-xl p-8">
+            <h3 class="text-2xl font-bold text-[#14f2d7] mb-4"
+              data-en="Fun Facts – Do You Know?" data-de="Fun Facts – Wusstest du schon?">
               Fun Facts – Do You Know?
             </h3>
-
-
-            <!-- Decorative quotes (same style as profile) -->
-            <span class="absolute top-0 left-0 text-6xl mt-3 md:text-8xl text-[#14f2d7] opacity-20 select-none">“</span>
-            <span class="absolute bottom-0 right-0 text-6xl md:text-8xl text-[#14f2d7] opacity-20 select-none">”</span>
-            <p class="fun-fact-text text-gray-300 text-sm md:text-base z-10"
-              data-en="Urban development and environmental sustainability can coexist."
-              data-de="To be done">
-              Nairobi is the only capital city in the world with a national park inside it. 🦒
-              You can see giraffes and rhinos with skyscrapers in the background a powerful example of how urban development and environmental sustainability can coexist.</strong>,
-              
+            <span class="absolute top-0 left-0 text-6xl mt-3 md:text-8xl text-[#14f2d7] opacity-20 select-none">"</span>
+            <span class="absolute bottom-0 right-0 text-6xl md:text-8xl text-[#14f2d7] opacity-20 select-none">"</span>
+            <p class="fun-fact-text text-gray-300 text-sm md:text-base z-10 mb-3"
+              data-en="Urban development and environmental sustainability can coexist." data-de="To be done">
+              Nairobi is the only capital city in the world with a national park inside it. 🦒 You can see giraffes and rhinos with skyscrapers in the background — a powerful example of how urban development and environmental sustainability can coexist.
             </p>
             <p class="relative text-gray-300 text-sm md:text-base mt-2 z-10"
-              data-en="She has also volunteered with Sekoya trading company in Nairobi, to call for climate action and  end to deforestation"
-              data-de="To be done">
-              She has also volunteered with <strong>Sekoya trading company in Nairobi, to call for climate action and  end to deforestation. This initiative led to planting of trees,
-                waste collection and youth sensitization in Githiga Ward, Kiambu Conty </strong>,Kenya <strong></strong>. 💪
+              data-en="Volunteering for climate action." data-de="To be done">
+              Hilder has also volunteered with <strong>Sekoya Trading Company in Nairobi</strong>, calling for climate action and an end to deforestation. This initiative led to tree planting, waste collection and youth sensitisation in Githiga Ward, Kiambu County, Kenya. 💪
             </p>
-
           </section>
-          <!-- Tags -->
           <div class="mt-4 flex gap-2 flex-wrap justify-center md:justify-start text-sm text-gray-400">
-            <span class="flex items-center gap-1 bg-[#14f2d7]/10 px-3 py-1 rounded-full">
-              ⚡ Spatial Planning
-            </span>
-            <span class="flex items-center gap-1 bg-[#14f2d7]/10 px-3 py-1 rounded-full">
-              🏭  Policy Reviews
-            </span>
-            <span class="flex items-center gap-1 bg-[#14f2d7]/10 px-3 py-1 rounded-full">
-              🤖 GIS Analysis
-            </span>
+            <span class="flex items-center gap-1 bg-[#14f2d7]/10 px-3 py-1 rounded-full">⚡ Spatial Planning</span>
+            <span class="flex items-center gap-1 bg-[#14f2d7]/10 px-3 py-1 rounded-full">🏛️ Policy Reviews</span>
+            <span class="flex items-center gap-1 bg-[#14f2d7]/10 px-3 py-1 rounded-full">🗺️ GIS Analysis</span>
           </div>
         </div>
-
       </section>
 
-      <!-- Project 3 (Electrical Inspection) -->
-
+      <!-- INCLUSIVE URBAN DEVELOPMENT -->
       <section class="project-tab reveal">
-        <div class="card md:w-1/2 bg-[#222] p-6 rounded-xl">
-          <h3 class="text-[#14f2d7] text-xl font-bold mb-2">
-           Inclusive Urban Development
-          </h3>
-           <img src="/photos/Stakeholders.jpeg">
-         <p data-en=" All the assignments involved climate change & gender mainstreaming, comprehensive stakeholders mapping (identification & analyses) and 
-                      engagement at all phases of any project execution process"
-            data-de="TBD.">
-             All the assignments involved climate change & gender mainstreaming, comprehensive stakeholders mapping (identification & analyses) and 
-             engagement at all phases of any project execution process.I carry out field research in diverse and vulnerable contexts, working respectfully 
-             with marginalized communities and ensuring their voices are heard.I remain ethically and culturally sensitive in all my work,
-             prioritizing inclusivity, respect, and responsible research practices.
-          </p> 
+        <div class="project flex flex-col md:flex-row gap-10 items-start">
+          <div class="md:w-1/2">
+            <div class="project-image expand" style="height:300px;">
+              <img src="/photos/Stakeholders.jpeg" alt="Inclusive Development">
+            </div>
+          </div>
+          <div class="card md:w-1/2 bg-[#222] p-6 rounded-xl">
+            <h3 class="text-[#14f2d7] text-xl font-bold mb-3">Inclusive Urban Development</h3>
+            <p class="mb-4" data-en="All the assignments involved climate change & gender mainstreaming." data-de="TBD.">
+              All the assignments involved climate change & gender mainstreaming, comprehensive stakeholders mapping (identification & analyses) and engagement at all phases of any project execution process.
+            </p>
+            <p class="mb-4">
+              I carry out field research in diverse and vulnerable contexts, working respectfully with marginalised communities and ensuring their voices are heard.
+            </p>
+            <p>
+              I remain ethically and culturally sensitive in all my work, prioritising inclusivity, respect, and responsible research practices.
+            </p>
+          </div>
         </div>
-        <div class="h-[2px] w-32 bg-gradient-to-r from-[#14f2d7] to-transparent"></div>
-      </div>
+        <div class="h-[2px] w-32 bg-gradient-to-r from-[#14f2d7] to-transparent mt-6"></div>
       </section>
-      <!-- Project 3 (Programming (c#, python, linux)) -->
-<section class="project-tab reveal">
-      <div class="section-containerproject flex flex-col md:flex-row gap-10 items-center">
-        <div class="project-collage">
-          <div class="project-image ratio-tall img expand">
-            <img src="/photos/napetet gis.jpg" alt="Environmental Sustainability">
-          </div>
-        
-        </div>
 
-        <div class="card md:w-1/2 bg-[#222] p-6 rounded-xl">
-          <h3 class="text-[#14f2d7] text-xl font-bold mb-2" data-en="Programming (C#, Python, ML & AI, Linux systems)"
-            data-de="Programmierung (C#, Python, ML & KI, Linux-Systeme)">
-            Spatial Planning
-          </h3>
-          <p data-en=" Skilled in spatial mapping,with experience in ArcGis and Qgis software applications. Experienced in field data collection, GPS survey, and form ulation of reports for development and 
-            implementation of urban solutions."
-            data-de="TBD">
-            Skilled in spatial mapping,with experience in ArcGis and Qgis software applications. Experienced in field data collection, GPS survey, and form ulation of reports for development and 
-            implementation of urban solutions.
-            
-          </p>
-        </div>
-        <div class="h-[2px] w-32 bg-gradient-to-r from-[#14f2d7] to-transparent"></div>
-      </div>
-    </section>
-
-      <!-- Project 3 (SAP, MS office skills $ PowerBI )) -->
-<section class="project-tab reveal">
-      <div class="section-containerproject flex flex-col md:flex-row-reverse gap-10 items-center">
-        <div class="project-collage">
-          <div class="project-image ratio-tall img expand">
-            <img src="/photos/documentation.jpg" alt="Documentation">
+      <!-- SPATIAL PLANNING -->
+      <section class="project-tab reveal">
+        <div class="project flex flex-col md:flex-row gap-10 items-start">
+          <div class="project-collage md:w-1/2">
+            <div class="project-image ratio-tall img expand">
+              <img src="/photos/napetet gis.jpg" alt="GIS Spatial Planning">
+            </div>
           </div>
-          <div class="project-image ratio-tall img expand">
-            <img src="/photos/powerpoint.jpg" alt="Programming">
+          <div class="card md:w-1/2 bg-[#222] p-6 rounded-xl">
+            <h3 class="text-[#14f2d7] text-xl font-bold mb-3"
+              data-en="Spatial Planning" data-de="Raumplanung">
+              Spatial Planning
+            </h3>
+            <p data-en="Skilled in spatial mapping with experience in ArcGIS and QGIS." data-de="TBD">
+              Skilled in spatial mapping, with experience in ArcGIS and QGIS software applications. Experienced in field data collection, GPS survey, and formulation of reports for development and implementation of urban solutions.
+            </p>
           </div>
         </div>
+        <div class="h-[2px] w-32 bg-gradient-to-r from-[#14f2d7] to-transparent mt-6"></div>
+      </section>
 
-        <div class="card md:w-1/2 bg-[#222] p-6 rounded-xl">
-          <h3 class="text-[#14f2d7] text-xl font-bold mb-2" data-en="SAP, MS Office Skills & PowerBI"
-            data-de="SAP-, MS-Office-Kenntnisse & PowerBI">
-            SAP, MS Office Skills & PowerBI
-          </h3>
-          <p data-en="Proficient in, MS Office for reporting, and presentations for various project stakeholders. I have drafted detailed reports, dashboards, and analytics to support decision-making and improve
-            project execution processes.."
-            data-de="TBD">
-            Proficient in, MS Office for reporting, and presentations for various project stakeholders. I have drafted detailed reports, dashboards, and analytics to support decision-making and improve
-            project execution processes.
-          </p>
+      <!-- SAP / MS OFFICE / POWERBI -->
+      <section class="project-tab reveal">
+        <div class="project flex flex-col md:flex-row-reverse gap-10 items-start">
+          <div class="project-collage md:w-1/2">
+            <div class="project-image ratio-tall img expand">
+              <img src="/photos/documentation.jpg" alt="Documentation">
+            </div>
+            <div class="project-image ratio-tall img expand">
+              <img src="/photos/powerpoint.jpg" alt="Presentation">
+            </div>
+          </div>
+          <div class="card md:w-1/2 bg-[#222] p-6 rounded-xl">
+            <h3 class="text-[#14f2d7] text-xl font-bold mb-3"
+              data-en="SAP, MS Office Skills & PowerBI" data-de="SAP-, MS-Office-Kenntnisse & PowerBI">
+              SAP, MS Office Skills & PowerBI
+            </h3>
+            <p data-en="Proficient in MS Office for reporting and presentations." data-de="TBD">
+              Proficient in MS Office for reporting and presentations for various project stakeholders. I have drafted detailed reports, dashboards, and analytics to support decision-making and improve project execution processes.
+            </p>
+          </div>
         </div>
-        <div class="h-[2px] w-32 bg-gradient-to-r from-[#14f2d7] to-transparent"></div>
-      </div>
-    </section>
-      <!-- Project 3 (SMP, IWS and Kaizen developments ) -->
-<section class="project-tab reveal">
-            <div class="card md:w-1/2 bg-[#222] p-6 rounded-xl">
-          <h3 class="text-[#14f2d7] text-xl font-bold mb-2" data-en="SMP, IWS and Kaizen Developments"
-            data-de="SMP-, IWS- und Kaizen-Entwicklungen">
+        <div class="h-[2px] w-32 bg-gradient-to-r from-[#14f2d7] to-transparent mt-6"></div>
+      </section>
+
+      <!-- ENVIRONMENTAL SUSTAINABILITY -->
+      <section class="project-tab reveal">
+        <div class="card bg-[#222] p-6 rounded-xl">
+          <h3 class="text-[#14f2d7] text-xl font-bold mb-3"
+            data-en="Environmental Sustainability" data-de="Umweltnachhaltigkeit">
             Environmental Sustainability
           </h3>
-          <p data-en="Passionate and experienced in fighting for active climate change responsive measures"
-            data-de="TBD.">
-            Passionate and experienced in fighting for active climate change responsive measures and Intergrated
-            environmental sustainability measures  to enhance the sustainability efficiency and longevity of our areas. Through volunteer experience
-            in Sekoya Cojmpany, I have contributed to youth sensitization campaigns, sustainable waste strategies, and improving overall sustainability processes.
+          <p class="mb-4" data-en="Passionate and experienced in fighting for active climate change responsive measures." data-de="TBD.">
+            Passionate and experienced in advocating for active climate change responsive measures and integrated environmental sustainability measures to enhance the sustainability, efficiency, and longevity of our built environments.
+          </p>
+          <p>
+            Through volunteer experience with Sekoya Company, I have contributed to youth sensitisation campaigns, sustainable waste strategies, and improving overall sustainability processes.
           </p>
         </div>
-      </div>
-    </section>
-    </section>
+        <div class="h-[2px] w-32 bg-gradient-to-r from-[#14f2d7] to-transparent mt-6"></div>
+      </section>
 
-    <!-- TESTIMONIALS TAB -->
+    </section>
+    <!-- END PROJECTS -->
+
+    <!-- TESTIMONIALS -->
     <section class="section-container fun-tab-card reveal mt-16">
-      <h3 class="text-2xl font-bold text-[#14f2d7] mb-6 text-center" data-en="Testimonials" data-de="Referenzen">
+      <h3 class="text-2xl font-bold text-[#14f2d7] mb-6 text-center"
+        data-en="Testimonials" data-de="Referenzen">
         Testimonials
       </h3>
-
       <div class="grid md:grid-cols-2 gap-6">
-        <!-- Testimonial 1 -->
         <div class="bg-[#222] p-5 rounded-xl border border-[#14f2d7]/20">
-          <p class="text-gray-300 text-sm mb-4"
-            data-en="EHilder is a dedicated and visionary individual with outstanding attributes in Physical Planning, Urban Design, Urban Management and Development and Office Administration.
-             She has exhibited a strong work ethic and is a great team player keen on contributing to knowledge through her work"
-            data-de="TBD">
-
-            “Hilder is a dedicated and visionary individual with outstanding attributes in Physical Planning, Urban Design, Urban Management and Development and Office Administration.
-             She has exhibited a strong work ethic and is a great team player keen on contributing to knowledge through her work”
+          <p class="text-gray-300 text-sm mb-4" data-en="Hilder is a dedicated and visionary individual." data-de="TBD">
+            "Hilder is a dedicated and visionary individual with outstanding attributes in Physical Planning, Urban Design, Urban Management and Development and Office Administration. She has exhibited a strong work ethic and is a great team player keen on contributing to knowledge through her work."
           </p>
           <div class="text-sm text-[#14f2d7] font-semibold">
-            Planner Dr.Mutua. JK — National Director of Physical planning
+            Planner Dr. Mutua. JK — National Director of Physical Planning
           </div>
         </div>
-
-        <!-- Testimonial 2 -->
         <div class="bg-[#222] p-5 rounded-xl border border-[#14f2d7]/20">
-          <p class="text-gray-300 text-sm mb-4"
-            data-en="Ms. Njoroge is passionate about developing her career through academic advancement. She is specifically interested in deepen her understanding and  skills in policy analysis and formulation"
-            data-de="TBD">
-            “Ms. Njoroge is passionate about developing her career through academic  advancement. She is specifically interested in deepen her understanding and skills in policy analysis and formulation..”
+          <p class="text-gray-300 text-sm mb-4" data-en="Ms. Njoroge is passionate about developing her career." data-de="TBD">
+            "Ms. Njoroge is passionate about developing her career through academic advancement. She is specifically interested in deepening her understanding and skills in policy analysis and formulation."
           </p>
           <div class="text-sm text-[#14f2d7] font-semibold">
-            Dr.-Ing. Walter Alando 
-            Coordinator, Department of Urban Management.
+            Dr.-Ing. Walter Alando — Coordinator, Department of Urban Management
           </div>
         </div>
-
       </div>
     </section>
 
     <!-- TIMELINE -->
     <section class="max-w-5xl w-full mt-10 relative z-10">
-      <h2 class="text-3xl font-bold mb-10 text-center" data-en="Career Timeline" data-de="Karriereverlauf">
+      <h2 class="text-3xl font-bold mb-10 text-center"
+        data-en="Career Timeline" data-de="Karriereverlauf">
         Career <span class="text-[#14f2d7]">Timeline</span>
       </h2>
-
-
-      <!-- Vertical line -->
       <div class="relative ml-6">
         <div class="absolute left-0 top-0 h-full w-px bg-[#14f2d7]/30"></div>
-
         <div class="space-y-10">
 
-          <!-- Item -->
           <div class="reveal relative pl-12">
             <span class="absolute left-[-9px] top-2 w-4 h-4 bg-[#14f2d7] rounded-full"></span>
-            <h3 class="text-xl font-semibold">Msc. Sustainable Urban Development -Technische Universität Darmstadt</h3>
+            <h3 class="text-xl font-semibold">MSc. Sustainable Urban Development — Technische Universität Darmstadt</h3>
             <p class="text-sm text-gray-400 mb-2">2025 – Present</p>
             <p class="text-gray-300 max-w-xl">
               Law of Property and Planning, Methodology of Empirical Analysis, GIS and Applications to Urban Development,
-              Urban Development and Architecture of Cities, Water in Urban Development, Ecological Management in Urban Development, 
-              Urban Rural Partnerships, Instruments of Spatial Planning, Urban Transport Planning, 
+              Urban Development and Architecture of Cities, Water in Urban Development, Ecological Management in Urban Development,
+              Urban Rural Partnerships, Instruments of Spatial Planning, Urban Transport Planning,
               Urban Construction Technologies, Development Planning and Governance, English Scientific Writing.
-
             </p>
           </div>
 
-          <!-- Item -->
           <div class="reveal relative pl-12">
             <span class="absolute left-[-9px] top-2 w-4 h-4 bg-[#14f2d7] rounded-full"></span>
-            <h3 class="text-xl font-semibold">Urban and Physical Planner - Rennaissance Planning Limited</h3>
+            <h3 class="text-xl font-semibold">Urban and Physical Planner — Renaissance Planning Limited</h3>
             <p class="text-sm text-gray-400 mb-2">2023 – 2024</p>
             <p class="text-gray-300 max-w-xl">
               Spatial Data Mapping, Primary data collection, Preparation of Planning reports, Environmental Planning,
-              site assessments and  preparation of Physical and Land Use Planning reports.
+              site assessments and preparation of Physical and Land Use Planning reports.
             </p>
           </div>
 
-          <!-- Item -->
           <div class="reveal relative pl-12">
             <span class="absolute left-[-9px] top-2 w-4 h-4 bg-[#14f2d7] rounded-full"></span>
-            <h3 class="text-xl font-semibold">Urban Planning Industrial Apprenticeship - Ministry of Lands, Public Works, Housing, and Urban Development
-            </h3>
+            <h3 class="text-xl font-semibold">Urban Planning Industrial Apprenticeship — Ministry of Lands, Public Works, Housing, and Urban Development</h3>
             <p class="text-sm text-gray-400 mb-2">2022 – 2023</p>
             <p class="text-gray-300 max-w-xl">
-              Feasibility studies on physical, social, economic, and environmental characteristics, Review of development plans and 
+              Feasibility studies on physical, social, economic, and environmental characteristics, Review of development plans and
               policies such as Planning Handbook and Physical Planners Registration, preparation of Physical Development Plans and maintaining Physical Planning Records.
             </p>
           </div>
@@ -663,14 +602,12 @@
       </div>
     </section>
 
-    <!-- PHOTO GALLERY AT BOTTOM (SCROLLING STRIP) -->
-    <!-- PHOTO GALLERY AT BOTTOM -->
+    <!-- PHOTO GALLERY -->
     <section class="max-w-full w-full mt-10 mb-2 overflow-hidden">
-      <h2 class="text-3xl font-bold text-center text-[#14f2d7] mb-6" data-en="Photo Gallery" data-de="Fotogalerie">
+      <h2 class="text-3xl font-bold text-center text-[#14f2d7] mb-6"
+        data-en="Photo Gallery" data-de="Fotogalerie">
         Photo <span class="text-white">Gallery</span>
       </h2>
-
-
       <div class="gallery-strip">
         <div class="gallery-item object-contain"><img src="/photos/Meeting tURKANA.jpeg" alt="expo1"></div>
         <div class="gallery-item object-contain"><img src="/photos/Turkana river.jpeg" alt="expo2"></div>
@@ -684,7 +621,6 @@
         <div class="gallery-item object-contain"><img src="/photos/Turkana.jpeg" alt="Photo 8"></div>
         <div class="gallery-item object-contain"><img src="/photos/Volunteer.jpeg" alt="Photo 9"></div>
         <div class="gallery-item object-contain"><img src="/photos/Stakeholders.jpeg" alt="Photo 10"></div>
-
         <!-- duplicate for seamless scroll -->
         <div class="gallery-item object-contain"><img src="/photos/Meeting tURKANA.jpeg" alt="expo1"></div>
         <div class="gallery-item object-contain"><img src="/photos/Turkana river.jpeg" alt="expo2"></div>
@@ -698,72 +634,54 @@
         <div class="gallery-item object-contain"><img src="/photos/Turkana.jpeg" alt="Photo 8"></div>
         <div class="gallery-item object-contain"><img src="/photos/Volunteer.jpeg" alt="Photo 9"></div>
         <div class="gallery-item object-contain"><img src="/photos/Stakeholders.jpeg" alt="Photo 10"></div>
-
       </div>
     </section>
 
     <!-- CLOSING CTA -->
-    <section class="section-container reveal  w-full md:max-w-4xl md:mx-auto mt-5 mb-0 relative z-10">
-
-      <div class="relative bg-[#1b1b1b]  w-full rounded-2xl p-2 md:p-2 overflow-hidden shadow-xl">
-
-        <!-- Glow background -->
+    <section class="section-container reveal w-full md:max-w-4xl md:mx-auto mt-5 mb-0 relative z-10">
+      <div class="relative bg-[#1b1b1b] w-full rounded-2xl p-6 md:p-10 overflow-hidden shadow-xl">
         <div class="absolute inset-0 bg-gradient-to-br from-[#14f2d7]/10 via-transparent to-transparent blur-3xl"></div>
-
         <div class="relative z-10 text-center max-w-3xl mx-auto">
-          <h2 class="text-3xl md:text-4xl font-extrabold mb-4" data-en="Let’s Build Something Meaningful"
-            data-de="Lass uns etwas Sinnvolles schaffen">
-            Let’s <span class="text-[#14f2d7]">Build Something</span> Meaningful
+          <h2 class="text-3xl md:text-4xl font-extrabold mb-4"
+            data-en="Let's Build Something Meaningful" data-de="Lass uns etwas Sinnvolles schaffen">
+            Let's <span class="text-[#14f2d7]">Build Something</span> Meaningful
           </h2>
-
           <p class="text-gray-300 mb-8 text-base md:text-lg"
-            data-en="I am committed to advancing the built environment through sustainable, inclusive, and resilient planning approaches that promote long-term efficiency, 
-            environmental responsibility, and equitable access to urban resources."
+            data-en="I am committed to advancing the built environment through sustainable, inclusive, and resilient planning approaches."
             data-de="TBD">
-            I am committed to advancing the built environment through sustainable, inclusive, and resilient planning approaches that promote long-term efficiency, 
-            environmental responsibility, and equitable access to urban resources.
+            I am committed to advancing the built environment through sustainable, inclusive, and resilient planning approaches that promote long-term efficiency, environmental responsibility, and equitable access to urban resources.
           </p>
-
-
-          <!-- Buttons -->
           <div class="flex flex-wrap justify-center gap-4">
-            <a href="mailto:hildervalentine@gmail.com" class="bg-[#14f2d7] text-black font-semibold px-6 py-3 rounded-full
-                  hover:scale-105 transition shadow-lg">
+            <a href="mailto:hildervalentine@gmail.com"
+              class="bg-[#14f2d7] text-black font-semibold px-6 py-3 rounded-full hover:scale-105 transition shadow-lg">
               Contact Me
             </a>
-
-            <a href="#" class="border border-[#14f2d7] text-[#14f2d7] px-6 py-3 rounded-full
-                  hover:bg-[#14f2d7]/10 transition">
+            <a href="#"
+              class="border border-[#14f2d7] text-[#14f2d7] px-6 py-3 rounded-full hover:bg-[#14f2d7]/10 transition">
               Download CV
             </a>
           </div>
-
-          <!-- Philosophy line -->
           <p class="mt-10 text-sm text-gray-400 italic"
             data-en="Cities have the capability of providing something for everybody, only because, and only when, they are created by everybody."
             data-de="TBD.">
-
-            “Cities have the capability of providing something for everybody, only because, and only when, they are created by everybody.”
+            "Cities have the capability of providing something for everybody, only because, and only when, they are created by everybody."
           </p>
           <p class="portfolio-note mt-6 text-sm text-gray-400 max-w-2xl mx-auto">
             <span class="text-[#14f2d7] font-medium">Note:</span>
             Interested in this portfolio layout or want something similar built for you?
-            Reach out — I’m happy to help design and build a personalized version.
+            Reach out — I'm happy to help design and build a personalised version.
           </p>
-
         </div>
-
       </div>
-
     </section>
 
-    <!-- CTA -->
+    <!-- HIRE ME -->
     <a href="mailto:hildervalentine@gmail.com"
       class="fixed bottom-6 right-6 z-50 bg-[#14f2d7] text-black font-semibold px-6 py-3 rounded-full shadow-lg hover:scale-105 transition">
       Hire Me
     </a>
+
     <script src="script.js"></script>
   </div>
 </body>
-
 </html>
