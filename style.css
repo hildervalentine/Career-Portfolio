@@ -1,5 +1,6 @@
 /* ============================================================
-   PORTFOLIO — Dark Navy · Off-White · Amber · Emerald
+   PORTFOLIO — Deep Brown · Tan · Cream
+   Palette: 391809 · 774723 · 89572D · B99268 · FBF5E9
    Font: Bookman Old Style (system) → IM Fell English (web)
    ============================================================ */
 
@@ -7,35 +8,35 @@
 
 /* ---------------- CSS VARIABLES ---------------- */
 :root {
-  /* Backgrounds — deep navy */
-  --navy:         #070C18;
-  --navy-2:       #0B1022;
-  --navy-3:       #0F152A;
-  --navy-card:    #111830;
-  --navy-card-2:  #141D35;
+  /* Backgrounds — deep brown */
+  --navy:         #2A1206;
+  --navy-2:       #391809;
+  --navy-3:       #4A2410;
+  --navy-card:    #391809;
+  --navy-card-2:  #4A2410;
 
   /* Text */
-  --offwhite:     #EDE8DF;      /* headings */
-  --offwhite-dim: #B5AFA6;      /* body paragraphs */
-  --muted:        #6B6560;      /* labels / secondary */
+  --offwhite:     #FBF5E9;      /* headings */
+  --offwhite-dim: #E6D9C3;      /* body paragraphs */
+  --muted:        #B99268;      /* labels / secondary */
 
-  /* Accent 1 — deep emerald */
-  --amber:        #1A7A4A;
-  --amber-light:  #25A865;
-  --amber-dim:    rgba(26,122,74,0.28);
-  --amber-glow:   rgba(26,122,74,0.09);
+  /* Accent 1 — tan */
+  --amber:        #B99268;
+  --amber-light:  #D2B08A;
+  --amber-dim:    rgba(185,146,104,0.28);
+  --amber-glow:   rgba(185,146,104,0.09);
 
-  /* Accent 2 — emerald green */
-  --emerald:      #1E8C5A;
-  --emerald-light:#28B872;
-  --emerald-dim:  rgba(30,140,90,0.28);
-  --emerald-glow: rgba(30,140,90,0.09);
+  /* Accent 2 — light tan */
+  --emerald:      #B99268;
+  --emerald-light:#E0C9A6;
+  --emerald-dim:  rgba(185,146,104,0.28);
+  --emerald-glow: rgba(185,146,104,0.09);
 
   /* Borders */
-  --border:        rgba(26,122,74,0.18);
-  --border-hover:  rgba(26,122,74,0.55);
-  --border-em:     rgba(30,140,90,0.20);
-  --border-em-hov: rgba(30,140,90,0.55);
+  --border:        rgba(185,146,104,0.22);
+  --border-hover:  rgba(185,146,104,0.55);
+  --border-em:     rgba(185,146,104,0.25);
+  --border-em-hov: rgba(185,146,104,0.60);
 }
 
 /* ============================================================
@@ -107,9 +108,9 @@ body::before {
   z-index: 0;
   pointer-events: none;
   background:
-    radial-gradient(ellipse 70% 45% at 0% 0%,   rgba(26,122,74,0.04),  transparent),
-    radial-gradient(ellipse 55% 55% at 100% 100%, rgba(30,140,90,0.05),  transparent),
-    radial-gradient(ellipse 40% 40% at 50% 50%,  rgba(11,16,34,0.6),    transparent);
+    radial-gradient(ellipse 70% 45% at 0% 0%,   rgba(185,146,104,0.06), transparent),
+    radial-gradient(ellipse 55% 55% at 100% 100%, rgba(137,87,45,0.10),  transparent),
+    radial-gradient(ellipse 40% 40% at 50% 50%,  rgba(42,18,6,0.6),      transparent);
 }
 
 /* Grain texture — editorial feel */
@@ -152,55 +153,43 @@ body::after {
 
 /* ============================================================
    TAILWIND COLOR OVERRIDES
-   teal (#B99268) → emerald for most things,
-   emerald applied selectively via class tweaks below
+   (accent color #B99268 used in index.html)
    ============================================================ */
 .text-\[\#B99268\]    { color: var(--amber) !important; }
 .border-\[\#B99268\]  { border-color: var(--amber) !important; }
 .bg-\[\#B99268\]      { background-color: var(--amber) !important; }
 .bg-\[\#B99268\]\/10  { background-color: var(--amber-glow) !important; }
-.bg-\[\#B99268\]\/20  { background-color: rgba(26,122,74,0.10) !important; }
-.bg-\[\#B99268\]\/30  { background-color: rgba(26,122,74,0.14) !important; }
+.bg-\[\#B99268\]\/20  { background-color: rgba(185,146,104,0.10) !important; }
+.bg-\[\#B99268\]\/30  { background-color: rgba(185,146,104,0.14) !important; }
 .via-\[\#B99268\]     { --tw-gradient-stops: var(--tw-gradient-from), var(--amber), var(--tw-gradient-to) !important; }
 .from-\[\#B99268\]    { --tw-gradient-from: var(--amber) !important; }
 
-/* Card backgrounds → navy */
+/* Card backgrounds */
 .bg-\[\#222\]    { background-color: var(--navy-card-2) !important; }
 .bg-\[\#391809\] { background-color: var(--navy-card)   !important; }
-.bg-\[\#391809\] { background-color: var(--navy-card)   !important; }
-
-/* Text grays */
-.text-[#FBF5E9] { color: var(--offwhite-dim) !important; }
-.text-[#FBF5E9]/70 { color: var(--muted)        !important; }
-
-/* Intro section inline green → navy */
-section[style*="#024908"],
-section[style*="#012002"] {
-  background: linear-gradient(135deg, var(--navy-2) 0%, var(--navy) 100%) !important;
-}
 
 /* ============================================================
-   EMERALD GREEN — applied to specific elements for variety
+   ACCENT ELEMENTS
    ============================================================ */
 
-/* Timeline dots → emerald */
+/* Timeline dots */
 span.absolute.w-4.h-4.bg-\[\#B99268\].rounded-full {
   background-color: var(--emerald) !important;
   box-shadow: 0 0 8px var(--emerald-dim);
 }
 
-/* Stat numbers → emerald */
+/* Stat numbers */
 .stat-number {
-  color: var(--emerald) !important;
+  color: var(--emerald-light) !important;
 }
 
-/* Expertise card icons → emerald tint */
+/* Expertise card icons */
 .expertise-icon {
-  background: rgba(30,140,90,0.10) !important;
+  background: rgba(185,146,104,0.10) !important;
   border: 1px solid var(--border-em) !important;
 }
 
-/* Expertise titles → emerald */
+/* Expertise titles */
 .expertise-title {
   color: var(--emerald-light) !important;
   font-size: 1.0rem;
@@ -209,16 +198,12 @@ span.absolute.w-4.h-4.bg-\[\#B99268\].rounded-full {
   line-height: 1.2;
 }
 
-/* Tech scroll strip text → emerald tint */
+/* Tech scroll strip text */
 .animate-tech-scroll span {
   color: var(--emerald-light) !important;
 }
 
-/* Section headings — first span (the colored word) → amber, keep white for rest */
-/* Career timeline heading */
-.text-\[\#B99268\] { color: var(--amber) !important; }
-
-/* Skill / tag pills — alternate amber and emerald */
+/* Skill / tag pills */
 .fun-fact .bg-\[\#B99268\]\/10,
 .fun-fact-tab .bg-\[\#B99268\]\/10 {
   background-color: var(--emerald-glow) !important;
@@ -227,18 +212,18 @@ span.absolute.w-4.h-4.bg-\[\#B99268\].rounded-full {
   border-radius: 0 !important;
 }
 
-/* Profile section name → amber */
+/* Profile section name */
 h3.text-\[\#B99268\] {
   color: var(--amber) !important;
 }
 
-/* Testimonial border accent → emerald */
+/* Testimonial border accent */
 .bg-\[\#222\].border.border-\[\#B99268\]\/20 {
   border-color: var(--border-em) !important;
   background-color: var(--navy-card-2) !important;
 }
 
-/* Glow divider lines — alternating */
+/* Glow divider lines */
 .h-\[2px\].bg-gradient-to-r {
   opacity: 0.7;
 }
@@ -266,7 +251,7 @@ h3.text-\[\#B99268\] {
 }
 @keyframes softPulse {
   0%,100% { box-shadow: 0 0 6px var(--emerald-dim); }
-  50%     { box-shadow: 0 0 18px rgba(30,140,90,0.45); }
+  50%     { box-shadow: 0 0 18px rgba(185,146,104,0.45); }
 }
 .lang-pulse { animation: softPulse 3.5s ease-in-out infinite; }
 @media (max-width: 768px) {
@@ -279,7 +264,7 @@ h3.text-\[\#B99268\] {
 .clip-path-triangle {
   clip-path: polygon(100% 0, 0 0, 100% 100%);
   background-color: var(--emerald) !important;
-  opacity: 0.12 !important;
+  opacity: 0.18 !important;
 }
 
 /* ============================================================
@@ -288,7 +273,7 @@ h3.text-\[\#B99268\] {
 .intro-glow {
   position: absolute;
   inset: 0;
-  background: radial-gradient(circle, rgba(30,140,90,0.10), transparent 70%);
+  background: radial-gradient(circle, rgba(185,146,104,0.14), transparent 70%);
   filter: blur(60px);
   animation: pulse 6s ease-in-out infinite;
 }
@@ -318,7 +303,7 @@ h3.text-\[\#B99268\] {
 }
 .expertise-card:hover {
   border-color: var(--border-em-hov) !important;
-  box-shadow: 0 6px 32px rgba(30,140,90,0.08);
+  box-shadow: 0 6px 32px rgba(185,146,104,0.12);
 }
 .expertise-header {
   display: flex;
@@ -353,7 +338,7 @@ h3.text-\[\#B99268\] {
 @media (hover: hover) {
   .stat-card:hover {
     transform: translateY(-4px);
-    box-shadow: 0 0 22px rgba(30,140,90,0.10);
+    box-shadow: 0 0 22px rgba(185,146,104,0.16);
   }
 }
 
@@ -386,7 +371,7 @@ h3.text-\[\#B99268\] {
 .project-image.expand       { transition: transform 0.4s ease; }
 .project-image.expand:hover {
   transform: scale(1.04);
-  box-shadow: 0 0 28px rgba(30,140,90,0.18);
+  box-shadow: 0 0 28px rgba(185,146,104,0.25);
   z-index: 20;
 }
 .project-image.expand:hover img { filter: brightness(1) saturate(1); }
@@ -419,17 +404,17 @@ h3.text-\[\#B99268\] {
   padding: 2rem;
   border-radius: 0;
   border: 1px solid var(--border);
-  background: linear-gradient(150deg, rgba(30,140,90,0.03) 0%, var(--navy-card) 100%);
+  background: linear-gradient(150deg, rgba(137,87,45,0.12) 0%, var(--navy-card) 100%);
   margin-bottom: 3rem;
   transition: border-color 0.4s, box-shadow 0.4s;
 }
 .project-tab:hover {
-  border-color: rgba(26,122,74,0.45);
-  box-shadow: 0 10px 40px rgba(26,122,74,0.06);
+  border-color: rgba(185,146,104,0.55);
+  box-shadow: 0 10px 40px rgba(185,146,104,0.10);
 }
 @media (max-width: 768px) { .project-tab { padding: 1.25rem; } }
 
-/* Top-left corner — deep emerald */
+/* Top-left corner */
 .project-tab::before {
   content: '';
   position: absolute;
@@ -439,7 +424,7 @@ h3.text-\[\#B99268\] {
   border-left: 1px solid var(--amber-dim);
   pointer-events: none;
 }
-/* Bottom-right corner — emerald */
+/* Bottom-right corner */
 .project-tab::after {
   content: '';
   position: absolute;
@@ -464,12 +449,12 @@ h3.text-\[\#B99268\] {
   content: '';
   position: absolute;
   inset: -1px;
-  background: radial-gradient(circle at top left, rgba(30,140,90,0.06), transparent 55%);
+  background: radial-gradient(circle at top left, rgba(185,146,104,0.08), transparent 55%);
   z-index: -1;
 }
 .fun-fact:hover {
   transform: translateY(-3px);
-  box-shadow: 0 10px 35px rgba(30,140,90,0.08);
+  box-shadow: 0 10px 35px rgba(185,146,104,0.12);
   transition: transform 0.4s, box-shadow 0.4s;
 }
 
@@ -482,7 +467,7 @@ h3.text-\[\#B99268\] {
 @media (min-width: 768px) { .fun-fact-tab { padding: 2rem; } }
 .fun-fact-tab.active { opacity: 1; transform: translateY(0); }
 .fun-fact-tab:hover {
-  box-shadow: 0 0 18px rgba(30,140,90,0.10);
+  box-shadow: 0 0 18px rgba(185,146,104,0.16);
   transition: box-shadow 0.4s;
 }
 .fun-fact-text { transition: color 0.3s; }
@@ -490,7 +475,7 @@ h3.text-\[\#B99268\] {
 
 @media (max-width: 640px) {
   .glow-mobile {
-    box-shadow: 0 0 0 1px var(--border-em), 0 0 20px rgba(30,140,90,0.08);
+    box-shadow: 0 0 0 1px var(--border-em), 0 0 20px rgba(185,146,104,0.12);
   }
 }
 
@@ -505,14 +490,14 @@ h3.text-\[\#B99268\] {
 }
 
 /* ============================================================
-   PROFILE IMAGE RING — emerald
+   PROFILE IMAGE RING
    ============================================================ */
 div.border-4.border-\[\#B99268\] {
   border-color: var(--emerald) !important;
   border-width: 2px !important;
 }
 div.bg-\[\#B99268\]\/20.border-4 {
-  background-color: rgba(30,140,90,0.08) !important;
+  background-color: rgba(185,146,104,0.10) !important;
   border-color: var(--emerald) !important;
   border-width: 2px !important;
 }
@@ -520,7 +505,7 @@ div.bg-\[\#B99268\]\/20.border-4 {
 /* ============================================================
    BUTTONS
    ============================================================ */
-/* Primary CTA — deep emerald fill */
+/* Primary CTA — tan fill */
 a.bg-\[\#B99268\].text-black {
   background-color: var(--amber) !important;
   color: var(--navy) !important;
@@ -535,7 +520,7 @@ a.bg-\[\#B99268\].text-black:hover {
   background-color: var(--amber-light) !important;
 }
 
-/* Secondary CTA — emerald outline */
+/* Secondary CTA — tan outline */
 a.border-\[\#B99268\] {
   border-color: var(--emerald) !important;
   color: var(--emerald-light) !important;
@@ -545,13 +530,13 @@ a.border-\[\#B99268\] {
   font-size: 0.85rem;
 }
 a.border-\[\#B99268\]:hover {
-  background-color: rgba(30,140,90,0.08) !important;
+  background-color: rgba(185,146,104,0.12) !important;
 }
 
-/* Hire Me floating button — deep emerald */
+/* Hire Me floating button */
 a.fixed.bg-\[\#B99268\] {
-  background-color: transparent !important;
-  color: var(--amber) !important;
+  background-color: var(--navy-2) !important;
+  color: var(--amber-light) !important;
   border: 1px solid var(--amber) !important;
   border-radius: 0 !important;
   font-weight: 700;
@@ -566,10 +551,10 @@ a.fixed.bg-\[\#B99268\]:hover {
 }
 
 /* ============================================================
-   SKILL TAGS — emerald tint
+   SKILL TAGS
    ============================================================ */
 span.bg-\[\#B99268\]\/10 {
-  background-color: rgba(30,140,90,0.08) !important;
+  background-color: rgba(185,146,104,0.10) !important;
   color: var(--emerald-light) !important;
   border-radius: 0 !important;
   border: 1px solid var(--border-em);
@@ -579,16 +564,16 @@ span.bg-\[\#B99268\]\/10 {
 }
 
 /* ============================================================
-   GRADIENT DIVIDERS — amber
+   GRADIENT DIVIDERS
    ============================================================ */
 .bg-gradient-to-r.from-\[\#B99268\] {
   background: linear-gradient(to right, var(--amber), transparent) !important;
 }
 
 /* ============================================================
-   TIMELINE — emerald dots & line
+   TIMELINE
    ============================================================ */
-.bg-\[\#B99268\]\/30 { background-color: rgba(30,140,90,0.15) !important; }
+.bg-\[\#B99268\]\/30 { background-color: rgba(185,146,104,0.20) !important; }
 
 /* ============================================================
    GALLERY
@@ -621,7 +606,7 @@ span.bg-\[\#B99268\]\/10 {
   height: 400px;
   z-index: 50;
   border-color: var(--amber);
-  box-shadow: 0 0 25px rgba(26,122,74,0.15);
+  box-shadow: 0 0 25px rgba(185,146,104,0.25);
 }
 .gallery-item img {
   width: 100%;
@@ -646,7 +631,7 @@ span.bg-\[\#B99268\]\/10 {
 }
 .portfolio-note.active { opacity: 1; transform: translateY(0); }
 .portfolio-note:hover {
-  text-shadow: 0 0 10px rgba(30,140,90,0.4);
+  text-shadow: 0 0 10px rgba(185,146,104,0.5);
   color: var(--emerald-light);
   cursor: pointer;
   transition: all 0.4s ease;
@@ -669,7 +654,7 @@ span.bg-\[\#B99268\]\/10 {
 }
 
 /* ============================================================
-   SPECIFIC HEADING OVERRIDES — plain off-white, no color
+   SPECIFIC HEADING OVERRIDES — plain cream
    ============================================================ */
 
 /* H1 name/title spans — "Hilder Valentine" and "Urban Planner" */
@@ -713,7 +698,7 @@ h1 span.text-\[\#B99268\] {
   height: 300px;
   z-index: 50;
   border-color: var(--amber);
-  box-shadow: 0 0 30px rgba(26,122,74,0.25);
+  box-shadow: 0 0 30px rgba(185,146,104,0.30);
 }
 .cert-item img {
   width: 100%;
