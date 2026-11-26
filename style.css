@@ -152,26 +152,26 @@ body::after {
 
 /* ============================================================
    TAILWIND COLOR OVERRIDES
-   teal (#14f2d7) → emerald for most things,
+   teal (#B99268) → emerald for most things,
    emerald applied selectively via class tweaks below
    ============================================================ */
-.text-\[\#14f2d7\]    { color: var(--amber) !important; }
-.border-\[\#14f2d7\]  { border-color: var(--amber) !important; }
-.bg-\[\#14f2d7\]      { background-color: var(--amber) !important; }
-.bg-\[\#14f2d7\]\/10  { background-color: var(--amber-glow) !important; }
-.bg-\[\#14f2d7\]\/20  { background-color: rgba(26,122,74,0.10) !important; }
-.bg-\[\#14f2d7\]\/30  { background-color: rgba(26,122,74,0.14) !important; }
-.via-\[\#14f2d7\]     { --tw-gradient-stops: var(--tw-gradient-from), var(--amber), var(--tw-gradient-to) !important; }
-.from-\[\#14f2d7\]    { --tw-gradient-from: var(--amber) !important; }
+.text-\[\#B99268\]    { color: var(--amber) !important; }
+.border-\[\#B99268\]  { border-color: var(--amber) !important; }
+.bg-\[\#B99268\]      { background-color: var(--amber) !important; }
+.bg-\[\#B99268\]\/10  { background-color: var(--amber-glow) !important; }
+.bg-\[\#B99268\]\/20  { background-color: rgba(26,122,74,0.10) !important; }
+.bg-\[\#B99268\]\/30  { background-color: rgba(26,122,74,0.14) !important; }
+.via-\[\#B99268\]     { --tw-gradient-stops: var(--tw-gradient-from), var(--amber), var(--tw-gradient-to) !important; }
+.from-\[\#B99268\]    { --tw-gradient-from: var(--amber) !important; }
 
 /* Card backgrounds → navy */
 .bg-\[\#222\]    { background-color: var(--navy-card-2) !important; }
-.bg-\[\#1b1b1b\] { background-color: var(--navy-card)   !important; }
-.bg-\[\#1d1d1d\] { background-color: var(--navy-card)   !important; }
+.bg-\[\#391809\] { background-color: var(--navy-card)   !important; }
+.bg-\[\#391809\] { background-color: var(--navy-card)   !important; }
 
 /* Text grays */
-.text-gray-300 { color: var(--offwhite-dim) !important; }
-.text-gray-400 { color: var(--muted)        !important; }
+.text-[#FBF5E9] { color: var(--offwhite-dim) !important; }
+.text-[#FBF5E9]/70 { color: var(--muted)        !important; }
 
 /* Intro section inline green → navy */
 section[style*="#024908"],
@@ -184,7 +184,7 @@ section[style*="#012002"] {
    ============================================================ */
 
 /* Timeline dots → emerald */
-span.absolute.w-4.h-4.bg-\[\#14f2d7\].rounded-full {
+span.absolute.w-4.h-4.bg-\[\#B99268\].rounded-full {
   background-color: var(--emerald) !important;
   box-shadow: 0 0 8px var(--emerald-dim);
 }
@@ -216,11 +216,11 @@ span.absolute.w-4.h-4.bg-\[\#14f2d7\].rounded-full {
 
 /* Section headings — first span (the colored word) → amber, keep white for rest */
 /* Career timeline heading */
-.text-\[\#14f2d7\] { color: var(--amber) !important; }
+.text-\[\#B99268\] { color: var(--amber) !important; }
 
 /* Skill / tag pills — alternate amber and emerald */
-.fun-fact .bg-\[\#14f2d7\]\/10,
-.fun-fact-tab .bg-\[\#14f2d7\]\/10 {
+.fun-fact .bg-\[\#B99268\]\/10,
+.fun-fact-tab .bg-\[\#B99268\]\/10 {
   background-color: var(--emerald-glow) !important;
   border: 1px solid var(--border-em);
   color: var(--emerald-light) !important;
@@ -228,12 +228,12 @@ span.absolute.w-4.h-4.bg-\[\#14f2d7\].rounded-full {
 }
 
 /* Profile section name → amber */
-h3.text-\[\#14f2d7\] {
+h3.text-\[\#B99268\] {
   color: var(--amber) !important;
 }
 
 /* Testimonial border accent → emerald */
-.bg-\[\#222\].border.border-\[\#14f2d7\]\/20 {
+.bg-\[\#222\].border.border-\[\#B99268\]\/20 {
   border-color: var(--border-em) !important;
   background-color: var(--navy-card-2) !important;
 }
@@ -507,11 +507,11 @@ h3.text-\[\#14f2d7\] {
 /* ============================================================
    PROFILE IMAGE RING — emerald
    ============================================================ */
-div.border-4.border-\[\#14f2d7\] {
+div.border-4.border-\[\#B99268\] {
   border-color: var(--emerald) !important;
   border-width: 2px !important;
 }
-div.bg-\[\#14f2d7\]\/20.border-4 {
+div.bg-\[\#B99268\]\/20.border-4 {
   background-color: rgba(30,140,90,0.08) !important;
   border-color: var(--emerald) !important;
   border-width: 2px !important;
@@ -521,7 +521,7 @@ div.bg-\[\#14f2d7\]\/20.border-4 {
    BUTTONS
    ============================================================ */
 /* Primary CTA — deep emerald fill */
-a.bg-\[\#14f2d7\].text-black {
+a.bg-\[\#B99268\].text-black {
   background-color: var(--amber) !important;
   color: var(--navy) !important;
   border-radius: 0 !important;
@@ -531,12 +531,12 @@ a.bg-\[\#14f2d7\].text-black {
   font-size: 0.85rem;
   transition: background 0.3s;
 }
-a.bg-\[\#14f2d7\].text-black:hover {
+a.bg-\[\#B99268\].text-black:hover {
   background-color: var(--amber-light) !important;
 }
 
 /* Secondary CTA — emerald outline */
-a.border-\[\#14f2d7\] {
+a.border-\[\#B99268\] {
   border-color: var(--emerald) !important;
   color: var(--emerald-light) !important;
   border-radius: 0 !important;
@@ -544,12 +544,12 @@ a.border-\[\#14f2d7\] {
   font-style: italic;
   font-size: 0.85rem;
 }
-a.border-\[\#14f2d7\]:hover {
+a.border-\[\#B99268\]:hover {
   background-color: rgba(30,140,90,0.08) !important;
 }
 
 /* Hire Me floating button — deep emerald */
-a.fixed.bg-\[\#14f2d7\] {
+a.fixed.bg-\[\#B99268\] {
   background-color: transparent !important;
   color: var(--amber) !important;
   border: 1px solid var(--amber) !important;
@@ -560,7 +560,7 @@ a.fixed.bg-\[\#14f2d7\] {
   font-size: 0.78rem;
   backdrop-filter: blur(4px);
 }
-a.fixed.bg-\[\#14f2d7\]:hover {
+a.fixed.bg-\[\#B99268\]:hover {
   background-color: var(--amber) !important;
   color: var(--navy) !important;
 }
@@ -568,7 +568,7 @@ a.fixed.bg-\[\#14f2d7\]:hover {
 /* ============================================================
    SKILL TAGS — emerald tint
    ============================================================ */
-span.bg-\[\#14f2d7\]\/10 {
+span.bg-\[\#B99268\]\/10 {
   background-color: rgba(30,140,90,0.08) !important;
   color: var(--emerald-light) !important;
   border-radius: 0 !important;
@@ -581,14 +581,14 @@ span.bg-\[\#14f2d7\]\/10 {
 /* ============================================================
    GRADIENT DIVIDERS — amber
    ============================================================ */
-.bg-gradient-to-r.from-\[\#14f2d7\] {
+.bg-gradient-to-r.from-\[\#B99268\] {
   background: linear-gradient(to right, var(--amber), transparent) !important;
 }
 
 /* ============================================================
    TIMELINE — emerald dots & line
    ============================================================ */
-.bg-\[\#14f2d7\]\/30 { background-color: rgba(30,140,90,0.15) !important; }
+.bg-\[\#B99268\]\/30 { background-color: rgba(30,140,90,0.15) !important; }
 
 /* ============================================================
    GALLERY
@@ -673,12 +673,12 @@ span.bg-\[\#14f2d7\]\/10 {
    ============================================================ */
 
 /* H1 name/title spans — "Hilder Valentine" and "Urban Planner" */
-h1 span.text-\[\#14f2d7\] {
+h1 span.text-\[\#B99268\] {
   color: var(--offwhite) !important;
 }
 
 /* Breakthrough Project + Work Experience + Accreditations headings */
-.max-w-4xl h2 span.text-\[\#14f2d7\] {
+.max-w-4xl h2 span.text-\[\#B99268\] {
   color: var(--offwhite) !important;
 }
 
