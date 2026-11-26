@@ -1,5 +1,5 @@
-/* ============================================================
-   PORTFOLIO — Deep Brown · Tan · Cream
+ /* ============================================================
+   PORTFOLIO — Beige / Cream page · Dark Brown boxes
    Palette: 391809 · 774723 · 89572D · B99268 · FBF5E9
    Font: Bookman Old Style (system) → IM Fell English (web)
    ============================================================ */
@@ -8,35 +8,35 @@
 
 /* ---------------- CSS VARIABLES ---------------- */
 :root {
-  /* Backgrounds — deep brown */
-  --navy:         #2A1206;
-  --navy-2:       #391809;
-  --navy-3:       #4A2410;
-  --navy-card:    #391809;
-  --navy-card-2:  #4A2410;
+  /* Page (light) */
+  --page:         #FBF5E9;   /* cream */
+  --page-2:       #F3E7D3;   /* beige */
+  --page-3:       #EAD9BC;   /* deeper beige */
+  --panel:        rgba(185,146,104,0.14);
 
-  /* Text */
-  --offwhite:     #FBF5E9;      /* headings */
-  --offwhite-dim: #E6D9C3;      /* body paragraphs */
-  --muted:        #B99268;      /* labels / secondary */
+  /* Text on light */
+  --head:         #391809;   /* headings */
+  --text:         #4A2C17;   /* body text */
+  --text-soft:    #774723;   /* small / secondary text */
+  --accent:       #89572D;   /* accent on light */
 
-  /* Accent 1 — tan */
-  --amber:        #B99268;
-  --amber-light:  #D2B08A;
-  --amber-dim:    rgba(185,146,104,0.28);
-  --amber-glow:   rgba(185,146,104,0.09);
+  /* Dark boxes */
+  --dark:         #391809;
+  --dark-2:       #4A2410;
+  --dark-3:       #2A1206;
 
-  /* Accent 2 — light tan */
-  --emerald:      #B99268;
-  --emerald-light:#E0C9A6;
-  --emerald-dim:  rgba(185,146,104,0.28);
-  --emerald-glow: rgba(185,146,104,0.09);
+  /* Text on dark */
+  --cream:        #FBF5E9;
+  --cream-dim:    #E9DCC6;
+  --tan:          #B99268;
+  --tan-light:    #E0C9A6;
 
   /* Borders */
-  --border:        rgba(185,146,104,0.22);
-  --border-hover:  rgba(185,146,104,0.55);
-  --border-em:     rgba(185,146,104,0.25);
-  --border-em-hov: rgba(185,146,104,0.60);
+  --border:       rgba(137,87,45,0.30);
+  --border-hover: rgba(137,87,45,0.65);
+  --border-dark:  rgba(185,146,104,0.35);
+
+  --shadow:       0 8px 24px rgba(57,24,9,0.18);
 }
 
 /* ============================================================
@@ -52,35 +52,27 @@ html, body {
   width: 100%;
 }
 
-body {
-  background: var(--navy) !important;
-  color: var(--offwhite);
+body,
+body[style] {
+  background: linear-gradient(160deg, var(--page) 0%, var(--page-2) 60%, var(--page-3) 100%) !important;
+  background-attachment: fixed !important;
+  color: var(--text) !important;
   font-size: 1rem;
   line-height: 1.8;
 }
 
-body[style] { background: var(--navy) !important; }
-
 /* --- Typography scale --- */
+h1, h2, h3, h4 { color: var(--head) !important; }
 h1 {
-  color: var(--offwhite);
   font-size: 2.2rem;
   line-height: 1.15;
   font-weight: 700;
   letter-spacing: -0.01em;
 }
-h2 {
-  color: var(--offwhite);
-  font-size: 1.7rem;
-  font-weight: 700;
-}
-h3 {
-  color: var(--offwhite);
-  font-size: 1.2rem;
-  font-weight: 700;
-}
+h2 { font-size: 1.7rem; font-weight: 700; }
+h3 { font-size: 1.2rem; font-weight: 700; }
 p {
-  color: var(--offwhite-dim);
+  color: var(--text);
   font-size: 0.97rem;
   line-height: 1.85;
   font-weight: 400;
@@ -93,13 +85,13 @@ p {
   p  { font-size: 1rem; }
 }
 
-a { color: var(--amber); transition: color 0.3s; }
-a:hover { color: var(--amber-light); }
+a { color: var(--accent); transition: color 0.3s; }
+a:hover { color: var(--head); }
 
 img { max-width: 100%; height: auto; display: block; }
 
 /* ============================================================
-   BACKGROUND — deep atmospheric layers
+   BACKGROUND — soft atmosphere + grain
    ============================================================ */
 body::before {
   content: '';
@@ -108,19 +100,17 @@ body::before {
   z-index: 0;
   pointer-events: none;
   background:
-    radial-gradient(ellipse 70% 45% at 0% 0%,   rgba(185,146,104,0.06), transparent),
-    radial-gradient(ellipse 55% 55% at 100% 100%, rgba(137,87,45,0.10),  transparent),
-    radial-gradient(ellipse 40% 40% at 50% 50%,  rgba(42,18,6,0.6),      transparent);
+    radial-gradient(ellipse 70% 45% at 0% 0%,     rgba(185,146,104,0.18), transparent),
+    radial-gradient(ellipse 55% 55% at 100% 100%, rgba(137,87,45,0.12),   transparent);
 }
 
-/* Grain texture — editorial feel */
 body::after {
   content: '';
   position: fixed;
   inset: 0;
   z-index: 0;
   pointer-events: none;
-  opacity: 0.035;
+  opacity: 0.03;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='250' height='250'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='250' height='250' filter='url(%23n)'/%3E%3C/svg%3E");
   background-size: 250px 250px;
 }
@@ -152,21 +142,86 @@ body::after {
 }
 
 /* ============================================================
-   TAILWIND COLOR OVERRIDES
-   (accent color #B99268 used in index.html)
+   LIGHT AREAS — default text colors (Tailwind classes in HTML)
    ============================================================ */
-.text-\[\#B99268\]    { color: var(--amber) !important; }
-.border-\[\#B99268\]  { border-color: var(--amber) !important; }
-.bg-\[\#B99268\]      { background-color: var(--amber) !important; }
-.bg-\[\#B99268\]\/10  { background-color: var(--amber-glow) !important; }
-.bg-\[\#B99268\]\/20  { background-color: rgba(185,146,104,0.10) !important; }
-.bg-\[\#B99268\]\/30  { background-color: rgba(185,146,104,0.14) !important; }
-.via-\[\#B99268\]     { --tw-gradient-stops: var(--tw-gradient-from), var(--amber), var(--tw-gradient-to) !important; }
-.from-\[\#B99268\]    { --tw-gradient-from: var(--amber) !important; }
+.text-white,
+.text-gray-300,
+.text-gray-400,
+.text-\[\#FBF5E9\]            { color: var(--text) !important; }
+.text-\[\#FBF5E9\]\/70        { color: var(--text-soft) !important; }
+.text-\[\#B99268\]            { color: var(--accent) !important; }
 
-/* Card backgrounds */
-.bg-\[\#222\]    { background-color: var(--navy-card-2) !important; }
-.bg-\[\#391809\] { background-color: var(--navy-card)   !important; }
+.border-\[\#B99268\]          { border-color: var(--accent) !important; }
+.bg-\[\#B99268\]              { background-color: var(--accent) !important; }
+.bg-\[\#B99268\]\/10          { background-color: rgba(185,146,104,0.14) !important; }
+.bg-\[\#B99268\]\/20          { background-color: rgba(185,146,104,0.18) !important; }
+.bg-\[\#B99268\]\/30          { background-color: rgba(137,87,45,0.30)   !important; }
+.via-\[\#B99268\]             { --tw-gradient-stops: var(--tw-gradient-from), var(--accent), var(--tw-gradient-to) !important; }
+.from-\[\#B99268\]            { --tw-gradient-from: var(--accent) !important; }
+
+/* ============================================================
+   DARK BOXES — background + light text
+   Dark boxes: intro, stat cards, expertise cards, text boxes,
+   profile + fun-fact panels, testimonial cards, closing box
+   ============================================================ */
+.bg-\[\#391809\],
+.bg-\[\#222\],
+.bg-\[\#1b1b1b\],
+.bg-\[\#1d1d1d\] {
+  background-color: var(--dark) !important;
+  box-shadow: var(--shadow);
+}
+
+/* Intro section (inline gradient) */
+section[style*="linear-gradient"] {
+  background: linear-gradient(135deg, #391809 0%, #774723 100%) !important;
+  box-shadow: var(--shadow);
+}
+
+/* Profile + fun-fact panels (inline gradients) */
+.rounded-2xl[style*="linear-gradient"] {
+  background: linear-gradient(135deg, #391809 0%, #4A2410 60%, #2A1206 100%) !important;
+  border-color: var(--border-dark) !important;
+  box-shadow: var(--shadow);
+}
+
+/* Text inside every dark box */
+:is(.bg-\[\#391809\], .bg-\[\#222\], .bg-\[\#1b1b1b\], .bg-\[\#1d1d1d\],
+    .stat-card, .expertise-card,
+    section[style*="linear-gradient"],
+    .rounded-2xl[style*="linear-gradient"])
+  :is(h1, h2, h3, h4, p, span, li, div, strong, em) {
+  color: var(--cream-dim) !important;
+}
+
+:is(.bg-\[\#391809\], .bg-\[\#222\], .bg-\[\#1b1b1b\], .bg-\[\#1d1d1d\],
+    .stat-card, .expertise-card,
+    section[style*="linear-gradient"],
+    .rounded-2xl[style*="linear-gradient"])
+  :is(h1, h2, h3) {
+  color: var(--cream) !important;
+}
+
+/* Accent text inside dark boxes */
+:is(.bg-\[\#391809\], .bg-\[\#222\], .bg-\[\#1b1b1b\], .bg-\[\#1d1d1d\],
+    .stat-card, .expertise-card,
+    section[style*="linear-gradient"],
+    .rounded-2xl[style*="linear-gradient"])
+  :is(.text-\[\#B99268\], .expertise-title, .stat-number, .bg-\[\#B99268\]\/10) {
+  color: var(--tan-light) !important;
+}
+
+/* Links inside dark boxes */
+:is(.bg-\[\#391809\], .bg-\[\#222\], .bg-\[\#1b1b1b\], .bg-\[\#1d1d1d\])
+  p a {
+  color: var(--tan-light) !important;
+}
+
+/* Testimonial cards border */
+.bg-\[\#391809\].border,
+.bg-\[\#222\].border {
+  border-color: var(--border-dark) !important;
+}
 
 /* ============================================================
    ACCENT ELEMENTS
@@ -174,84 +229,69 @@ body::after {
 
 /* Timeline dots */
 span.absolute.w-4.h-4.bg-\[\#B99268\].rounded-full {
-  background-color: var(--emerald) !important;
-  box-shadow: 0 0 8px var(--emerald-dim);
+  background-color: var(--accent) !important;
+  box-shadow: 0 0 8px rgba(137,87,45,0.4);
 }
 
 /* Stat numbers */
-.stat-number {
-  color: var(--emerald-light) !important;
-}
+.stat-number { color: var(--tan-light) !important; }
 
 /* Expertise card icons */
 .expertise-icon {
-  background: rgba(185,146,104,0.10) !important;
-  border: 1px solid var(--border-em) !important;
+  background: rgba(185,146,104,0.15) !important;
+  border: 1px solid var(--border-dark) !important;
 }
 
 /* Expertise titles */
 .expertise-title {
-  color: var(--emerald-light) !important;
   font-size: 1.0rem;
   font-weight: 700;
   font-style: italic;
   line-height: 1.2;
 }
 
-/* Tech scroll strip text */
-.animate-tech-scroll span {
-  color: var(--emerald-light) !important;
-}
+/* Tech scroll strip text (on light page) */
+.animate-tech-scroll span { color: var(--accent) !important; }
 
-/* Skill / tag pills */
-.fun-fact .bg-\[\#B99268\]\/10,
-.fun-fact-tab .bg-\[\#B99268\]\/10 {
-  background-color: var(--emerald-glow) !important;
-  border: 1px solid var(--border-em);
-  color: var(--emerald-light) !important;
+/* Skill / tag pills (inside dark panels) */
+span.bg-\[\#B99268\]\/10 {
+  background-color: rgba(185,146,104,0.14) !important;
+  border: 1px solid var(--border-dark);
   border-radius: 0 !important;
-}
-
-/* Profile section name */
-h3.text-\[\#B99268\] {
-  color: var(--amber) !important;
-}
-
-/* Testimonial border accent */
-.bg-\[\#222\].border.border-\[\#B99268\]\/20 {
-  border-color: var(--border-em) !important;
-  background-color: var(--navy-card-2) !important;
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+  font-style: italic;
 }
 
 /* Glow divider lines */
-.h-\[2px\].bg-gradient-to-r {
-  opacity: 0.7;
+.h-\[2px\].bg-gradient-to-r { opacity: 0.8; }
+.bg-gradient-to-r.from-\[\#B99268\] {
+  background: linear-gradient(to right, var(--accent), transparent) !important;
 }
 
 /* ============================================================
    LANGUAGE TOGGLE
    ============================================================ */
 .lang-toggle-btn {
-  background: transparent;
-  color: var(--emerald-light);
+  background: var(--dark);
+  color: var(--cream);
   font-weight: 700;
   font-style: italic;
   letter-spacing: 0.06em;
   font-size: 0.8rem;
   padding: 0.55rem 1.1rem;
   border-radius: 0;
-  border: 1px solid var(--emerald);
+  border: 1px solid var(--tan);
   transition: all 0.3s ease;
 }
 .lang-toggle-btn:hover {
-  background: var(--emerald);
-  color: var(--navy);
-  box-shadow: 0 0 18px var(--emerald-dim);
+  background: var(--tan);
+  color: var(--dark);
   transform: none;
 }
 @keyframes softPulse {
-  0%,100% { box-shadow: 0 0 6px var(--emerald-dim); }
-  50%     { box-shadow: 0 0 18px rgba(185,146,104,0.45); }
+  0%,100% { box-shadow: 0 0 6px rgba(57,24,9,0.25); }
+  50%     { box-shadow: 0 0 18px rgba(137,87,45,0.55); }
 }
 .lang-pulse { animation: softPulse 3.5s ease-in-out infinite; }
 @media (max-width: 768px) {
@@ -259,21 +299,18 @@ h3.text-\[\#B99268\] {
 }
 
 /* ============================================================
-   SHAPES
+   SHAPES + GLOW
    ============================================================ */
 .clip-path-triangle {
   clip-path: polygon(100% 0, 0 0, 100% 100%);
-  background-color: var(--emerald) !important;
-  opacity: 0.18 !important;
+  background-color: var(--tan) !important;
+  opacity: 0.25 !important;
 }
 
-/* ============================================================
-   INTRO GLOW
-   ============================================================ */
 .intro-glow {
   position: absolute;
   inset: 0;
-  background: radial-gradient(circle, rgba(185,146,104,0.14), transparent 70%);
+  background: radial-gradient(circle, rgba(185,146,104,0.20), transparent 70%);
   filter: blur(60px);
   animation: pulse 6s ease-in-out infinite;
 }
@@ -296,14 +333,14 @@ h3.text-\[\#B99268\] {
    EXPERTISE CARDS
    ============================================================ */
 .expertise-card {
-  background: var(--navy-card) !important;
-  border-color: var(--border-em) !important;
+  background: var(--dark) !important;
+  border-color: var(--border-dark) !important;
   border-radius: 0 !important;
   transition: border-color 0.35s, box-shadow 0.35s;
 }
 .expertise-card:hover {
-  border-color: var(--border-em-hov) !important;
-  box-shadow: 0 6px 32px rgba(185,146,104,0.12);
+  border-color: var(--tan) !important;
+  box-shadow: 0 8px 28px rgba(57,24,9,0.30);
 }
 .expertise-header {
   display: flex;
@@ -322,7 +359,6 @@ h3.text-\[\#B99268\] {
 }
 .expertise-desc {
   font-size: 0.875rem;
-  color: var(--muted);
   line-height: 1.7;
   font-style: italic;
 }
@@ -331,14 +367,14 @@ h3.text-\[\#B99268\] {
    STAT CARDS
    ============================================================ */
 .stat-card {
-  background: var(--navy-card) !important;
+  background: var(--dark) !important;
   border-radius: 0 !important;
   transition: transform 0.3s, box-shadow 0.3s;
 }
 @media (hover: hover) {
   .stat-card:hover {
     transform: translateY(-4px);
-    box-shadow: 0 0 22px rgba(185,146,104,0.16);
+    box-shadow: 0 10px 26px rgba(57,24,9,0.30);
   }
 }
 
@@ -362,7 +398,7 @@ h3.text-\[\#B99268\] {
   object-position: center;
   display: block;
   transition: transform 0.5s ease, filter 0.5s ease;
-  filter: brightness(0.85) saturate(0.88);
+  filter: brightness(0.95) saturate(0.95);
 }
 .project-image.ratio-square { aspect-ratio: 1/1; height: auto; }
 .project-image.ratio-wide   { aspect-ratio: 16/9; height: auto; }
@@ -371,7 +407,7 @@ h3.text-\[\#B99268\] {
 .project-image.expand       { transition: transform 0.4s ease; }
 .project-image.expand:hover {
   transform: scale(1.04);
-  box-shadow: 0 0 28px rgba(185,146,104,0.25);
+  box-shadow: 0 10px 30px rgba(57,24,9,0.30);
   z-index: 20;
 }
 .project-image.expand:hover img { filter: brightness(1) saturate(1); }
@@ -397,41 +433,39 @@ h3.text-\[\#B99268\] {
 .animate-tech-scroll { width: max-content; animation: tech-scroll 40s linear infinite; }
 
 /* ============================================================
-   PROJECT TABS
+   PROJECT TABS (light beige panels holding dark boxes)
    ============================================================ */
 .project-tab {
   position: relative;
   padding: 2rem;
   border-radius: 0;
   border: 1px solid var(--border);
-  background: linear-gradient(150deg, rgba(137,87,45,0.12) 0%, var(--navy-card) 100%);
+  background: var(--panel);
   margin-bottom: 3rem;
   transition: border-color 0.4s, box-shadow 0.4s;
 }
 .project-tab:hover {
-  border-color: rgba(185,146,104,0.55);
-  box-shadow: 0 10px 40px rgba(185,146,104,0.10);
+  border-color: var(--border-hover);
+  box-shadow: 0 10px 40px rgba(57,24,9,0.10);
 }
 @media (max-width: 768px) { .project-tab { padding: 1.25rem; } }
 
-/* Top-left corner */
 .project-tab::before {
   content: '';
   position: absolute;
   top: 10px; left: 10px;
   width: 18px; height: 18px;
-  border-top: 1px solid var(--amber-dim);
-  border-left: 1px solid var(--amber-dim);
+  border-top: 1px solid var(--accent);
+  border-left: 1px solid var(--accent);
   pointer-events: none;
 }
-/* Bottom-right corner */
 .project-tab::after {
   content: '';
   position: absolute;
   bottom: 10px; right: 10px;
   width: 18px; height: 18px;
-  border-bottom: 1px solid var(--emerald-dim);
-  border-right: 1px solid var(--emerald-dim);
+  border-bottom: 1px solid var(--accent);
+  border-right: 1px solid var(--accent);
   pointer-events: none;
 }
 
@@ -441,20 +475,13 @@ h3.text-\[\#B99268\] {
 .fun-fact {
   padding-top: 2rem;
   animation: none !important;
-  background: var(--navy-card) !important;
-  border: 1px solid var(--border-em) !important;
+  background: var(--dark) !important;
+  border: 1px solid var(--border-dark) !important;
   border-radius: 0 !important;
-}
-.fun-fact::before {
-  content: '';
-  position: absolute;
-  inset: -1px;
-  background: radial-gradient(circle at top left, rgba(185,146,104,0.08), transparent 55%);
-  z-index: -1;
 }
 .fun-fact:hover {
   transform: translateY(-3px);
-  box-shadow: 0 10px 35px rgba(185,146,104,0.12);
+  box-shadow: 0 10px 35px rgba(57,24,9,0.25);
   transition: transform 0.4s, box-shadow 0.4s;
 }
 
@@ -467,24 +494,23 @@ h3.text-\[\#B99268\] {
 @media (min-width: 768px) { .fun-fact-tab { padding: 2rem; } }
 .fun-fact-tab.active { opacity: 1; transform: translateY(0); }
 .fun-fact-tab:hover {
-  box-shadow: 0 0 18px rgba(185,146,104,0.16);
+  box-shadow: 0 0 18px rgba(57,24,9,0.18);
   transition: box-shadow 0.4s;
 }
 .fun-fact-text { transition: color 0.3s; }
-.fun-fact-tab:hover .fun-fact-text { color: var(--emerald-light); }
 
 @media (max-width: 640px) {
   .glow-mobile {
-    box-shadow: 0 0 0 1px var(--border-em), 0 0 20px rgba(185,146,104,0.12);
+    box-shadow: 0 0 0 1px var(--border), 0 0 20px rgba(57,24,9,0.12);
   }
 }
 
 /* ============================================================
-   TESTIMONIALS
+   TESTIMONIALS (light section, dark cards)
    ============================================================ */
 .fun-tab-card {
-  background: var(--navy-card) !important;
-  border: 1px solid var(--border-em) !important;
+  background: var(--panel) !important;
+  border: 1px solid var(--border) !important;
   padding: 2rem;
   border-radius: 0 !important;
 }
@@ -493,22 +519,22 @@ h3.text-\[\#B99268\] {
    PROFILE IMAGE RING
    ============================================================ */
 div.border-4.border-\[\#B99268\] {
-  border-color: var(--emerald) !important;
+  border-color: var(--tan) !important;
   border-width: 2px !important;
 }
 div.bg-\[\#B99268\]\/20.border-4 {
-  background-color: rgba(185,146,104,0.10) !important;
-  border-color: var(--emerald) !important;
+  background-color: rgba(185,146,104,0.15) !important;
+  border-color: var(--tan) !important;
   border-width: 2px !important;
 }
 
 /* ============================================================
    BUTTONS
    ============================================================ */
-/* Primary CTA — tan fill */
+/* Primary CTA — tan fill on the dark closing box */
 a.bg-\[\#B99268\].text-black {
-  background-color: var(--amber) !important;
-  color: var(--navy) !important;
+  background-color: var(--tan) !important;
+  color: var(--dark) !important;
   border-radius: 0 !important;
   font-weight: 700;
   font-style: italic;
@@ -517,63 +543,38 @@ a.bg-\[\#B99268\].text-black {
   transition: background 0.3s;
 }
 a.bg-\[\#B99268\].text-black:hover {
-  background-color: var(--amber-light) !important;
+  background-color: var(--tan-light) !important;
 }
 
-/* Secondary CTA — tan outline */
+/* Secondary CTA — outline on the dark closing box */
 a.border-\[\#B99268\] {
-  border-color: var(--emerald) !important;
-  color: var(--emerald-light) !important;
+  border-color: var(--tan) !important;
+  color: var(--tan-light) !important;
   border-radius: 0 !important;
   letter-spacing: 0.08em;
   font-style: italic;
   font-size: 0.85rem;
 }
 a.border-\[\#B99268\]:hover {
-  background-color: rgba(185,146,104,0.12) !important;
+  background-color: rgba(185,146,104,0.18) !important;
 }
 
-/* Hire Me floating button */
+/* Hire Me floating button (sits over a light page, so it is dark) */
 a.fixed.bg-\[\#B99268\] {
-  background-color: var(--navy-2) !important;
-  color: var(--amber-light) !important;
-  border: 1px solid var(--amber) !important;
+  background-color: var(--dark) !important;
+  color: var(--cream) !important;
+  border: 1px solid var(--tan) !important;
   border-radius: 0 !important;
   font-weight: 700;
   font-style: italic;
   letter-spacing: 0.1em;
   font-size: 0.78rem;
-  backdrop-filter: blur(4px);
+  box-shadow: var(--shadow);
 }
 a.fixed.bg-\[\#B99268\]:hover {
-  background-color: var(--amber) !important;
-  color: var(--navy) !important;
+  background-color: var(--tan) !important;
+  color: var(--dark) !important;
 }
-
-/* ============================================================
-   SKILL TAGS
-   ============================================================ */
-span.bg-\[\#B99268\]\/10 {
-  background-color: rgba(185,146,104,0.10) !important;
-  color: var(--emerald-light) !important;
-  border-radius: 0 !important;
-  border: 1px solid var(--border-em);
-  font-size: 0.78rem;
-  letter-spacing: 0.04em;
-  font-style: italic;
-}
-
-/* ============================================================
-   GRADIENT DIVIDERS
-   ============================================================ */
-.bg-gradient-to-r.from-\[\#B99268\] {
-  background: linear-gradient(to right, var(--amber), transparent) !important;
-}
-
-/* ============================================================
-   TIMELINE
-   ============================================================ */
-.bg-\[\#B99268\]\/30 { background-color: rgba(185,146,104,0.20) !important; }
 
 /* ============================================================
    GALLERY
@@ -596,7 +597,7 @@ span.bg-\[\#B99268\]\/10 {
   height: 150px;
   overflow: hidden;
   border-radius: 0;
-  border: 1px solid var(--border-em);
+  border: 1px solid var(--border);
   position: relative;
   transition: all 0.5s ease;
   cursor: pointer;
@@ -605,15 +606,15 @@ span.bg-\[\#B99268\]\/10 {
   width: 300px;
   height: 400px;
   z-index: 50;
-  border-color: var(--amber);
-  box-shadow: 0 0 25px rgba(185,146,104,0.25);
+  border-color: var(--accent);
+  box-shadow: 0 10px 30px rgba(57,24,9,0.30);
 }
 .gallery-item img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   transition: all 0.5s ease;
-  filter: brightness(0.85) saturate(0.85);
+  filter: brightness(0.95) saturate(0.95);
 }
 .gallery-item:hover img { filter: brightness(1) saturate(1); }
 @media (max-width: 640px) {
@@ -631,8 +632,6 @@ span.bg-\[\#B99268\]\/10 {
 }
 .portfolio-note.active { opacity: 1; transform: translateY(0); }
 .portfolio-note:hover {
-  text-shadow: 0 0 10px rgba(185,146,104,0.5);
-  color: var(--emerald-light);
   cursor: pointer;
   transition: all 0.4s ease;
 }
@@ -651,20 +650,6 @@ span.bg-\[\#B99268\]\/10 {
   .project-collage { width: 100%; }
   .project-image { width: 100%; }
   .project-tab { padding: 1.25rem; border-width: 1px; }
-}
-
-/* ============================================================
-   SPECIFIC HEADING OVERRIDES — plain cream
-   ============================================================ */
-
-/* H1 name/title spans — "Hilder Valentine" and "Urban Planner" */
-h1 span.text-\[\#B99268\] {
-  color: var(--offwhite) !important;
-}
-
-/* Breakthrough Project + Work Experience + Accreditations headings */
-.max-w-4xl h2 span.text-\[\#B99268\] {
-  color: var(--offwhite) !important;
 }
 
 /* ============================================================
@@ -688,7 +673,7 @@ h1 span.text-\[\#B99268\] {
   height: 200px;
   overflow: hidden;
   border-radius: 0;
-  border: 1px solid var(--border-em);
+  border: 1px solid var(--border);
   position: relative;
   transition: all 0.5s ease;
   cursor: pointer;
@@ -697,8 +682,8 @@ h1 span.text-\[\#B99268\] {
   width: 420px;
   height: 300px;
   z-index: 50;
-  border-color: var(--amber);
-  box-shadow: 0 0 30px rgba(185,146,104,0.30);
+  border-color: var(--accent);
+  box-shadow: 0 10px 30px rgba(57,24,9,0.30);
 }
 .cert-item img {
   width: 100%;
@@ -706,7 +691,7 @@ h1 span.text-\[\#B99268\] {
   object-fit: cover;
   object-position: center top;
   transition: all 0.5s ease;
-  filter: brightness(0.92);
+  filter: brightness(0.97);
 }
 .cert-item:hover img { filter: brightness(1); }
 
@@ -719,7 +704,7 @@ h1 span.text-\[\#B99268\] {
 /* ============================================================
    SCROLLBAR
    ============================================================ */
-::-webkit-scrollbar { width: 4px; }
-::-webkit-scrollbar-track { background: var(--navy); }
-::-webkit-scrollbar-thumb { background: var(--emerald-dim); }
-::-webkit-scrollbar-thumb:hover { background: var(--emerald); }
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--page-2); }
+::-webkit-scrollbar-thumb { background: var(--tan); }
+::-webkit-scrollbar-thumb:hover { background: var(--accent); }
